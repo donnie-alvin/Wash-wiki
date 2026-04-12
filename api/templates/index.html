@@ -12,7 +12,8 @@
     body {
       max-width: 480px;
       margin: auto;
-      height: 100vh;
+      min-height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       background: #f0f0f0;
@@ -27,6 +28,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 2;
     }
 
     .lang-toggle {
@@ -46,6 +50,9 @@
       flex-direction: row;
       gap: 8px;
       padding: 8px 12px;
+      position: sticky;
+      top: 48px;
+      z-index: 1;
     }
 
     .topic-btn {
@@ -115,6 +122,9 @@
       flex-direction: row;
       gap: 8px;
       padding: 12px;
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
     }
 
     input {
@@ -139,6 +149,42 @@
     ol {
       margin: 0;
       padding-left: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        padding: 10px 12px;
+      }
+
+      .topic-bar {
+        padding: 8px 10px;
+        top: 44px;
+      }
+
+      .chat-area {
+        padding: 10px;
+        gap: 8px;
+      }
+
+      .msg {
+        max-width: 92%;
+        font-size: 14px;
+      }
+
+      .input-row {
+        padding: 10px;
+        gap: 6px;
+      }
+
+      input {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
