@@ -70,6 +70,23 @@ class AnalyticsTests(unittest.TestCase):
         summary = analytics.get_summary()
         self.assertEqual(summary["language_breakdown"], {"en": 1, "shona": 2})
 
+    def test_get_summary_includes_ai_responses_in_totals_and_rates(self):
+        events = [
+            {"event_type": "intent_matched", "session_id": "s1", "intent_id": "water_safe"},
+            {"event_type": "intent_not_matched", "session_id": "s2"},
+            {"event_type": "intent_not_matched", "session_id": "s3"},
+            {"event_type": "ai_response", "session_id": "s3", "language": "en"},
+            {"event_type": "intent_not_matched", "session_id": "s4"},
+            {"event_type": "ai_response", "session_id": "s4", "language": "shona"},
+        ]
+        self._write_events(events)
+
+        summary = analytics.get_summary()
+        self.assertEqual(summary["ai_responses"], 2)
+        self.assertEqual(summary["total_messages"], 4)
+        self.assertEqual(summary["intent_match_rate"], 0.25)
+        self.assertEqual(summary["fallback_rate"], 0.75)
+
     def _write_events(self, events):
         os.makedirs(os.path.dirname(self.log_file), exist_ok=True)
         with open(self.log_file, "w", encoding="utf-8") as handle:

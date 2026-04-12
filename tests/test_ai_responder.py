@@ -47,11 +47,20 @@ class TestAIResponder(unittest.TestCase):
 
         _, kwargs = mock_openai.return_value.chat.completions.create.call_args
         system_prompt = kwargs["messages"][0]["content"]
-        self.assertIn("Answer using only the provided knowledge base.", system_prompt)
-        self.assertIn("Do not diagnose illness or provide treatment advice.", system_prompt)
-        self.assertIn("go to the nearest clinic or contact a health worker", system_prompt)
-        self.assertIn("Keep the response to 1 to 3 short sentences.", system_prompt)
-        self.assertIn("Respond in Shona language.", system_prompt)
+        self.assertEqual(
+            system_prompt,
+            (
+                "You are a sanitation and water safety assistant for rural communities in "
+                "Bikita District, Zimbabwe. You help people understand safe water practices, "
+                "handwashing, sanitation, and disease prevention. Answer only from the "
+                "knowledge base provided. Keep answers to 1 to 3 short sentences. Use simple "
+                "words. Do not diagnose illness. Do not replace a health worker. If someone "
+                "describes a severe emergency, tell them to go to the nearest clinic. If the "
+                "question is outside the knowledge base, say you cannot help with that and "
+                "suggest they ask about water safety, handwashing, sanitation, or disease "
+                "prevention. Respond in Shona language."
+            ),
+        )
 
 
 class TestFlowManagerAI(unittest.TestCase):

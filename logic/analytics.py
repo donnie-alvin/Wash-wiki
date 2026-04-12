@@ -5,7 +5,11 @@ from collections import Counter
 from datetime import UTC, datetime
 
 
-LOG_FILE = os.environ.get("ANALYTICS_LOG", "logs/events.jsonl")
+_DEFAULT_LOG_FILE = "logs/events.jsonl"
+if os.environ.get("VERCEL") or os.environ.get("VERCEL_ENV"):
+    _DEFAULT_LOG_FILE = "/tmp/wash-wiki/events.jsonl"
+
+LOG_FILE = os.environ.get("ANALYTICS_LOG", _DEFAULT_LOG_FILE)
 _LOG_LOCK = threading.Lock()
 
 
@@ -18,11 +22,13 @@ def log_event(event_type: str, session_id: str, **kwargs):
     record.update(kwargs)
 
     log_dir = os.path.dirname(LOG_FILE) or "logs"
-    os.makedirs(log_dir, exist_ok=True)
-
-    with _LOG_LOCK:
-        with open(LOG_FILE, "a", encoding="utf-8") as handle:
-            handle.write(json.dumps(record) + "\n")
+    try:
+        os.makedirs(log_dir, exist_ok=True)
+        with _LOG_LOCK:
+            with open(LOG_FILE, "a", encoding="utf-8") as handle:
+                handle.write(json.dumps(record) + "\n")
+    except OSError:
+        return
 
 
 def get_summary() -> dict:
@@ -79,7 +85,7 @@ def get_summary() -> dict:
             elif event_type == "ai_response":
                 ai_responses += 1
 
-    total_messages = matched + not_matched + ai_responses
+    total_messages = matched + not_matched
     summary["total_sessions"] = len(session_ids)
     summary["total_messages"] = total_messages
     summary["intent_match_rate"] = matched / total_messages if total_messages else 0.0

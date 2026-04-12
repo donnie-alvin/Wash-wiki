@@ -53,6 +53,7 @@ def message():
     if is_escalation is True:
         log_event("escalation_triggered", session_id)
     if fm_response.get("is_ai") is True:
+        log_event("intent_not_matched", session_id)
         log_event("ai_response", session_id, language=fm_response.get("language"))
 
     response_dict = {
