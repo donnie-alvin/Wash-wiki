@@ -144,9 +144,11 @@ class TestFlowManager(unittest.TestCase):
         self.assertIsInstance(response["topic_menu"], list)
         self.assertTrue(response["topic_menu"])
 
+    @patch("logic.flow_manager.get_ai_response", return_value=None)
     @patch("logic.flow_manager.get_fallback")
     @patch("logic.flow_manager.match_intent")
-    def test_fallback(self, mock_match_intent, mock_get_fallback):
+    def test_fallback(self, mock_match_intent, mock_get_fallback, mock_get_ai_response):
+        del mock_get_ai_response
         mock_match_intent.return_value = None
         mock_get_fallback.return_value = {
             "short": "I did not understand that.",

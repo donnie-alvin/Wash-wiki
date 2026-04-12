@@ -52,6 +52,8 @@ def message():
         log_event("intent_not_matched", session_id)
     if is_escalation is True:
         log_event("escalation_triggered", session_id)
+    if fm_response.get("is_ai") is True:
+        log_event("ai_response", session_id, language=fm_response.get("language"))
 
     response_dict = {
         "response_text": fm_response.get("short"),
@@ -62,6 +64,7 @@ def message():
         "intent_id": intent_id,
         "is_fallback": is_fallback,
         "is_escalation": is_escalation,
+        "is_ai": fm_response.get("is_ai", False),
         "topic_menu": fm_response.get("topic_menu"),
     }
     return jsonify(response_dict)

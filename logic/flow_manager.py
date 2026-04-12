@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+from logic.ai_responder import get_ai_response
 from logic.decision_trees import get_follow_up_question, resolve_branch
 from logic.fallback_handler import get_fallback
-from logic.intent_matcher import match_intent, reload_intents
+from logic.intent_matcher import get_all_intents, match_intent, reload_intents
 from logic.language_manager import LanguageManager
 from logic.response_builder import build_response
 
@@ -114,6 +115,7 @@ class FlowManager:
         *,
         is_fallback: bool = False,
         is_escalation: bool = False,
+        is_ai: bool = False,
         topic_menu=None,
     ) -> dict:
         output = dict(response)
@@ -121,6 +123,7 @@ class FlowManager:
         output["intent_id"] = session["last_intent_id"]
         output["is_fallback"] = is_fallback
         output["is_escalation"] = is_escalation
+        output["is_ai"] = is_ai
         output["topic_menu"] = topic_menu
         return output
 
@@ -189,6 +192,11 @@ class FlowManager:
                     response = dict(response)
                     response["follow_up"] = follow_up
             return self._build_output(response, session)
+
+        ai_reply = get_ai_response(user_input, session["language"], get_all_intents())
+        if ai_reply:
+            session["last_intent_id"] = None
+            return self._build_output({"short": ai_reply}, session, is_ai=True)
 
         fallback = get_fallback(session["language"])
         fallback_topics = fallback.get("topics") or fallback.get("steps") or list(TOPIC_MAP.keys())

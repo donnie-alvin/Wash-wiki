@@ -34,6 +34,7 @@ def get_summary() -> dict:
         "top_intents": [],
         "language_breakdown": {},
         "escalations": 0,
+        "ai_responses": 0,
     }
 
     if not os.path.exists(LOG_FILE):
@@ -45,6 +46,7 @@ def get_summary() -> dict:
     matched = 0
     not_matched = 0
     escalations = 0
+    ai_responses = 0
 
     with open(LOG_FILE, "r", encoding="utf-8") as handle:
         for line in handle:
@@ -74,8 +76,10 @@ def get_summary() -> dict:
                     language_counts[language] += 1
             elif event_type == "escalation_triggered":
                 escalations += 1
+            elif event_type == "ai_response":
+                ai_responses += 1
 
-    total_messages = matched + not_matched
+    total_messages = matched + not_matched + ai_responses
     summary["total_sessions"] = len(session_ids)
     summary["total_messages"] = total_messages
     summary["intent_match_rate"] = matched / total_messages if total_messages else 0.0
@@ -86,4 +90,5 @@ def get_summary() -> dict:
     ]
     summary["language_breakdown"] = dict(language_counts)
     summary["escalations"] = escalations
+    summary["ai_responses"] = ai_responses
     return summary

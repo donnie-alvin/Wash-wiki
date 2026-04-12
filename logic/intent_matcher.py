@@ -31,6 +31,10 @@ def _load_all_intents() -> list[dict]:
 _ALL_INTENTS = _load_all_intents()
 
 
+def get_all_intents() -> list[dict]:
+    return _ALL_INTENTS
+
+
 def reload_intents() -> None:
     global _ALL_INTENTS
     _ALL_INTENTS = _load_all_intents()
