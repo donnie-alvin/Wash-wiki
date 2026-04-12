@@ -1,0 +1,853 @@
+[
+  {
+    "intent_id": "water_river_safe",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Can I drink river water?",
+      "shona": "Ndinganwa mvura yerwizi here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Is river water safe to drink?",
+        "Can I use river water for drinking?",
+        "Can people drink water from the river?"
+      ],
+      "shona": [
+        "Mvura yerwizi yakachengeteka kunwiwa here?",
+        "Ndingashandisa mvura yerwizi pakunwa here?",
+        "Zvakanaka here kunwa mvura inobva murwizi?"
+      ]
+    },
+    "answer_short": {
+      "en": "River water may contain germs and should not be drunk before treatment.",
+      "shona": "Mvura yerwizi inogona kuva nemasimu uye haifaniri kunwiwa isati yarapwa."
+    },
+    "answer_steps": {
+      "en": [
+        "If the water is dirty, filter it first with a clean cloth or sand filter.",
+        "Boil it for at least 1 minute or treat it with chlorine.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Kana mvura yakasviba, tanga waisefa nejira rakachena kana sefa yejecha.",
+        "Bika kweminiti imwe kana kuirapa nechlorine.",
+        "Chengeta mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not drink untreated river water.",
+      "shona": "Usanwa mvura yerwizi isina kurapwa."
+    },
+    "follow_up_question": {
+      "en": "Is the water clear or dirty?",
+      "shona": "Mvura yacho yakachena here kana yakasviba?"
+    },
+    "tags": ["river", "river water", "drink", "safe", "rwizi", "mvura yerwizi", "kunwa", "yakachengeteka"]
+  },
+  {
+    "intent_id": "water_clear_safe",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "If water looks clean, is it safe?",
+      "shona": "Kana mvura ichiita seyakachena, yakachengeteka here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Can I drink water that looks clean?",
+        "Is clear water always safe?",
+        "If water is clear, is it okay to drink?"
+      ],
+      "shona": [
+        "Ndinganwa mvura inoita seyakachena here?",
+        "Mvura yakajeka inenge yakachengeteka nguva dzose here?",
+        "Kana mvura yakachena pameso, zvakanaka kuiwa here?"
+      ]
+    },
+    "answer_short": {
+      "en": "No. Water can look clean but still carry invisible germs.",
+      "shona": "Kwete. Mvura inogona kutaridzika yakachena asi ichine masimu asingaonekwi."
+    },
+    "answer_steps": {
+      "en": [
+        "Boil or treat the water before drinking it.",
+        "Keep treated water in a clean, covered container."
+      ],
+      "shona": [
+        "Bika kana kurapa mvura usati wanwa.",
+        "Chengeta mvura yarapwa mumudziyo wakachena wakafukidzwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not assume clear water is safe.",
+      "shona": "Usafunge kuti mvura yakajeka yakachengeteka."
+    },
+    "follow_up_question": null,
+    "tags": ["clear water", "clean water", "safe", "drink", "mvura yakachena", "mvura yakajeka", "yakachengeteka", "kunwa"]
+  },
+  {
+    "intent_id": "water_treat_home",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How can I treat water at home?",
+      "shona": "Ndingarapa sei mvura pamba?"
+    },
+    "sample_variations": {
+      "en": [
+        "How do I make water safe at home?",
+        "What can I use to treat water at home?",
+        "How should I clean drinking water at home?"
+      ],
+      "shona": [
+        "Ndoita sei kuti mvura ive yakachengeteka pamba?",
+        "Ndingashandisei kurapa mvura pamba?",
+        "Ndinonatsa sei mvura yekunwa ndiri pamba?"
+      ]
+    },
+    "answer_short": {
+      "en": "You can boil water, use chlorine, or filter it to make it safer for drinking.",
+      "shona": "Munogona kubika mvura, kuisa chlorine, kana kuisefa kuti ive yakachengeteka kunwiwa."
+    },
+    "answer_steps": {
+      "en": [
+        "If the water is cloudy, filter it first through a clean cloth.",
+        "Boil for at least 1 minute or add the correct amount of chlorine.",
+        "Let it cool and store it in a clean, covered container."
+      ],
+      "shona": [
+        "Kana mvura ine tsvina, tanga waisefa nejira rakachena.",
+        "Bika kweminiti imwe kana kuisa chlorine yakaringana.",
+        "Rega itonhore woichengeta mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not store treated water in a dirty container.",
+      "shona": "Usachengete mvura yarapwa mumudziyo une tsvina."
+    },
+    "follow_up_question": null,
+    "tags": ["treat water", "home treatment", "boil", "chlorine", "filter", "rapa mvura", "kurapa", "bika", "chlorine", "sefa"]
+  },
+  {
+    "intent_id": "water_boil_why",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why should I boil water?",
+      "shona": "Sei ndichifanira kubika mvura?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why is boiling water important?",
+        "Does boiling water help?",
+        "Why do people boil drinking water?"
+      ],
+      "shona": [
+        "Sei kubika mvura kuchikosha?",
+        "Kubika mvura kunobatsira nei?",
+        "Vanhu vanobikirei mvura yekunwa?"
+      ]
+    },
+    "answer_short": {
+      "en": "Boiling helps kill many germs that can make people sick.",
+      "shona": "Kubika kunobatsira kuuraya masimu mazhinji anokonzera kurwara."
+    },
+    "answer_steps": {
+      "en": [
+        "Bring the water to a full boil.",
+        "Keep it boiling for at least 1 minute.",
+        "Cool it and keep it in a clean container."
+      ],
+      "shona": [
+        "Isa mvura pamoto kusvikira yabubura zvakanaka.",
+        "Ramba ichibika kweminiti imwe.",
+        "Rega itonhore woichengeta mumudziyo wakachena."
+      ]
+    },
+    "answer_warning": {
+      "en": "Boiling does not help if dirty water is stored again in an unclean container.",
+      "shona": "Kubika hakubatsiri kana mvura yadzoswa mumudziyo usina kuchena."
+    },
+    "follow_up_question": null,
+    "tags": ["boil water", "why boil", "germs", "safe drinking water", "kubika mvura", "bika", "masimu", "mvura yekunwa"]
+  },
+  {
+    "intent_id": "water_boil_how_long",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How long should I boil water?",
+      "shona": "Ndinofanira kubika mvura kwenguva yakareba sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "How many minutes should I boil water?",
+        "How long do I keep water boiling?",
+        "For how much time should water boil?"
+      ],
+      "shona": [
+        "Ndinobika mvura maminitsi mangani?",
+        "Mvura inofanira kubika kwenguva yakadii?",
+        "Ndinorega mvura ichibika kwenguva yakareba sei?"
+      ]
+    },
+    "answer_short": {
+      "en": "Boil water for at least 1 minute. In very high places, boil it for 3 minutes.",
+      "shona": "Bika mvura kweminiti imwe. Kunzvimbo dzakakwirira zvikuru, bika kwemaminitsi matatu."
+    },
+    "answer_steps": null,
+    "answer_warning": {
+      "en": "Do not drink water that has not boiled long enough.",
+      "shona": "Usanwa mvura isina kubikwa nguva yakakwana."
+    },
+    "follow_up_question": null,
+    "tags": ["boil time", "minutes", "how long", "kubika", "maminitsi", "nguva", "mvura"]
+  },
+  {
+    "intent_id": "water_safe",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Is my water safe to drink?",
+      "shona": "Mvura yangu yakachengeteka kunwiwa here?"
+    },
+    "sample_variations": {
+      "en": [
+        "How do I know if water is safe?",
+        "Is this water okay to drink?",
+        "Can I tell if my water is safe?"
+      ],
+      "shona": [
+        "Ndinoziva sei kuti mvura yakachengeteka?",
+        "Mvura iyi yakanaka kunwiwa here?",
+        "Pane nzira here yekuziva kana mvura yakachengeteka?"
+      ]
+    },
+    "answer_short": {
+      "en": "Water is safer to drink after it has been boiled or treated and kept in a clean container.",
+      "shona": "Mvura inonyanya kuchengeteka kunwiwa kana yabikwa kana kurapwa yobva yachengetwa mumudziyo wakachena."
+    },
+    "answer_steps": {
+      "en": [
+        "Check where the water comes from.",
+        "If you are not sure, boil or treat it before drinking.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Tarisa kuti mvura iri kubva kupi.",
+        "Kana usina chokwadi, bika kana kuirapa usati wanwa.",
+        "Chengeta mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Water from rivers, dams, and dirty containers may not be safe without treatment.",
+      "shona": "Mvura yerwizi, yedhamu, kana iri mumudziyo une tsvina haigoni kuvimbwa nayo isina kurapwa."
+    },
+    "follow_up_question": {
+      "en": "Are you using river water, borehole water, or dam water?",
+      "shona": "Muri kushandisa mvura yerwizi, yemugodhi, kana yedhamu?"
+    },
+    "tags": ["safe water", "drink", "water source", "boil", "treat", "mvura yakachengeteka", "kunwa", "mvura", "bika", "kurapa"]
+  },
+  {
+    "intent_id": "water_matezva",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Is water from Matezva Dam safe to drink?",
+      "shona": "Mvura yeMatezva Dam yakachengeteka kunwiwa here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Can I drink Matezva Dam water?",
+        "Is Matezva water safe?",
+        "Do I need to treat water from Matezva Dam?"
+      ],
+      "shona": [
+        "Ndinganwa mvura yeMatezva Dam here?",
+        "Mvura yeMatezva yakachengeteka here?",
+        "Mvura inobva kuMatezva Dam inofanira kurapwa here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Water from Matezva Dam should always be treated before drinking because it may be contaminated.",
+      "shona": "Mvura yeMatezva Dam inofanira kugara yarapwa isati yanwiwa nokuti inogona kunge ine tsvina."
+    },
+    "answer_steps": {
+      "en": [
+        "If it is cloudy, filter it first.",
+        "Boil it or treat it with chlorine.",
+        "Store it in a clean container with a cover."
+      ],
+      "shona": [
+        "Kana iine tsvina, tanga waisefa.",
+        "Bika kana kuirapa nechlorine.",
+        "Chengeta mumudziyo wakachena une chifukidziro."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not drink Matezva Dam water without treatment.",
+      "shona": "Usanwa mvura yeMatezva Dam isina kurapwa."
+    },
+    "follow_up_question": null,
+    "tags": ["matezva", "dam water", "drink", "safe", "Matezva", "dhamu", "mvura yedhamu", "kunwa"]
+  },
+  {
+    "intent_id": "water_green",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why does water sometimes look green?",
+      "shona": "Sei mvura dzimwe nguva ichiita girinhi?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why is my water green?",
+        "Green water means what?",
+        "Is green water safe to drink?"
+      ],
+      "shona": [
+        "Sei mvura yangu ichiita girinhi?",
+        "Mvura yegirinhi inorevei?",
+        "Mvura iri girinhi yakachengeteka kunwiwa here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Green water may have algae or other contamination and should be treated before drinking.",
+      "shona": "Mvura yegirinhi inogona kuva nealgae kana imwe tsvina, saka inofanira kurapwa isati yanwiwa."
+    },
+    "answer_steps": {
+      "en": [
+        "Do not drink it straight away.",
+        "If possible, find a cleaner source.",
+        "If you must use it, filter and boil or treat it first."
+      ],
+      "shona": [
+        "Usainwe ipapo ipapo.",
+        "Kana zvichibvira, tsvagai imwe mvura iri nani.",
+        "Kana muchifanira kuishandisa, sefani wobva waibika kana kuiuraya nechlorine."
+      ]
+    },
+    "answer_warning": {
+      "en": "Green or discoloured water should never be trusted without treatment.",
+      "shona": "Mvura yegirinhi kana yakashanduka ruvara haifaniri kuvimbwa nayo isina kurapwa."
+    },
+    "follow_up_question": null,
+    "tags": ["green water", "algae", "dirty water", "girinhi", "mvura yegirinhi", "tsvina", "yakasviba"]
+  },
+  {
+    "intent_id": "water_smell",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why does water smell bad or taste strange?",
+      "shona": "Sei mvura ichinhuwa kana kuravira zvisina kujairika?"
+    },
+    "sample_variations": {
+      "en": [
+        "My water smells funny.",
+        "Why does water taste bad?",
+        "What does it mean when water smells strange?"
+      ],
+      "shona": [
+        "Mvura yangu iri kunhuwa zvisina kujairika.",
+        "Sei mvura ichiravira zvisina kunaka?",
+        "Zvinorevei kana mvura ichinhuwa zvisingawanzo?"
+      ]
+    },
+    "answer_short": {
+      "en": "A bad smell or strange taste can mean the water has contamination.",
+      "shona": "Kunhuwa kana kuravira kusina kujairika kunogona kuratidza kuti mvura ine tsvina."
+    },
+    "answer_steps": {
+      "en": [
+        "Avoid drinking it as it is.",
+        "Try to use another source if one is available.",
+        "If there is no other source, treat it and ask a health worker for advice."
+      ],
+      "shona": [
+        "Rega kuinwa yakadaro.",
+        "Shandisai imwe sosi kana iripo.",
+        "Kana pasina imwe, rapai mvura uye bvunzai mushandi weutano."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not drink water that smells or tastes unusual without caution.",
+      "shona": "Usanwa mvura inonhuwa kana kuravira zvisina kujairika pasina kungwarira."
+    },
+    "follow_up_question": null,
+    "tags": ["smell", "taste", "bad water", "contaminated water", "kunhuwa", "kuravira", "mvura ine tsvina", "yakasviba"]
+  },
+  {
+    "intent_id": "water_mining",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Can mining activities affect water quality?",
+      "shona": "Migodhi inogona kukanganisa kunaka kwemvura here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Does mining pollute water?",
+        "Can mines make water unsafe?",
+        "Is water near mines safe?"
+      ],
+      "shona": [
+        "Migodhi inosvibisa mvura here?",
+        "Migodhi inogona kuita kuti mvura isa chengeteke here?",
+        "Mvura iri pedyo nemigodhi yakachengeteka here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Yes. Mining can release harmful substances into nearby water sources.",
+      "shona": "Hongu. Migodhi inogona kusvitsa zvinhu zvinokuvadza mumvura iri pedyo."
+    },
+    "answer_steps": {
+      "en": [
+        "Avoid using water close to mining areas if you can.",
+        "Treat any water before drinking it.",
+        "Report unusual colour, smell, or illness to local health workers."
+      ],
+      "shona": [
+        "Dzivisai kushandisa mvura iri pedyo nemigodhi kana zvichibvira.",
+        "Rapai mvura yose musati mainwa.",
+        "Mhan'arai ruvara, kunhuwa, kana kurwara zvisina kujairika kumushandi weutano."
+      ]
+    },
+    "answer_warning": {
+      "en": "Water near mining areas may be unsafe even if it looks clean.",
+      "shona": "Mvura iri pedyo nemigodhi inogona kusava yakachengeteka kunyange ichitaridzika yakachena."
+    },
+    "follow_up_question": null,
+    "tags": ["mining", "mine", "water quality", "pollution", "migodhi", "kusvibisa", "kunaka kwemvura", "mvura"]
+  },
+  {
+    "intent_id": "water_germs",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What are germs in water?",
+      "shona": "Masimu ari mumvura chii?"
+    },
+    "sample_variations": {
+      "en": [
+        "What lives in dirty water?",
+        "Are there germs in water?",
+        "What makes water carry disease?"
+      ],
+      "shona": [
+        "Chii chinowanikwa mumvura yakasviba?",
+        "Mumvura mune masimu here?",
+        "Chii chinoita kuti mvura itakure chirwere?"
+      ]
+    },
+    "answer_short": {
+      "en": "Germs are tiny living things in dirty water that can cause disease.",
+      "shona": "Masimu zvinhu zvidiki zvikuru zviri mumvura ine tsvina zvinogona kukonzera chirwere."
+    },
+    "answer_steps": null,
+    "answer_warning": {
+      "en": "You cannot always see germs with your eyes.",
+      "shona": "Masimu haawanzoonekwa nemeso."
+    },
+    "follow_up_question": null,
+    "tags": ["germs", "dirty water", "disease", "masimu", "mvura yakasviba", "chirwere", "tsvina"]
+  },
+  {
+    "intent_id": "water_ecoli",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What is E. coli?",
+      "shona": "E. coli chii?"
+    },
+    "sample_variations": {
+      "en": [
+        "What is E. coli in water?",
+        "Why do people talk about E. coli?",
+        "Is E. coli dangerous?"
+      ],
+      "shona": [
+        "E. coli mumvura chii?",
+        "Sei vanhu vachitaura nezveE. coli?",
+        "E. coli ine ngozi here?"
+      ]
+    },
+    "answer_short": {
+      "en": "E. coli is a germ from faeces that can get into water and make people sick.",
+      "shona": "E. coli isimusi rinobva mutsvina yemunhu kana yemhuka rinogona kupinda mumvura rikakonzera kurwara."
+    },
+    "answer_steps": {
+      "en": [
+        "Use a toilet and keep waste away from water.",
+        "Boil or treat water before drinking it.",
+        "Wash hands after using the toilet."
+      ],
+      "shona": [
+        "Shandisai chimbuzi uye chengetai tsvina kure nemvura.",
+        "Bikai kana kurapa mvura musati mainwa.",
+        "Gezai maoko mushure mekushandisa chimbuzi."
+      ]
+    },
+    "answer_warning": {
+      "en": "Water with faecal contamination can spread serious illness.",
+      "shona": "Mvura ine tsvina yemuzvimbuzi inogona kuparadzira chirwere chakakomba."
+    },
+    "follow_up_question": null,
+    "tags": ["e. coli", "ecoli", "faeces", "germ", "E. coli", "tsvina", "simusi", "mvura"]
+  },
+  {
+    "intent_id": "water_contamination",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How does water become contaminated?",
+      "shona": "Mvura inosvibiswa sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "How does water get dirty?",
+        "What makes water unsafe?",
+        "How does contamination enter water?"
+      ],
+      "shona": [
+        "Mvura inosviba sei?",
+        "Chii chinoita kuti mvura isa chengeteke?",
+        "Tsvina inopinda sei mumvura?"
+      ]
+    },
+    "answer_short": {
+      "en": "Water becomes contaminated when waste, germs, or harmful substances enter it.",
+      "shona": "Mvura inosvibiswa kana tsvina, masimu, kana zvinhu zvinokuvadza zvapinda mairi."
+    },
+    "answer_steps": {
+      "en": [
+        "Keep toilets and waste away from water sources.",
+        "Use clean containers when fetching and storing water.",
+        "Treat water if you are not sure it is safe."
+      ],
+      "shona": [
+        "Chengetai zvimbuzi netsvina kure nematsime nemvura.",
+        "Shandisai midziyo yakachena pakutora nekuchengeta mvura.",
+        "Rapai mvura kana musina chokwadi chekuti yakachengeteka."
+      ]
+    },
+    "answer_warning": {
+      "en": "Rain, animals, dirty containers, and open defecation can all contaminate water.",
+      "shona": "Mvura inogona kusvibiswa nemvura yemvura, mhuka, midziyo ine tsvina, uye kuzvibatsira panze."
+    },
+    "follow_up_question": null,
+    "tags": ["contamination", "dirty water", "unsafe water", "contaminated", "kusvibiswa", "mvura ine tsvina", "yakasviba", "mvura"]
+  },
+  {
+    "intent_id": "water_boil_kills_germs",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Can boiling water remove germs?",
+      "shona": "Kubika mvura kunobvisa masimu here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Does boiling kill germs?",
+        "Is boiled water free from germs?",
+        "Can I make water safer by boiling it?"
+      ],
+      "shona": [
+        "Kubika mvura kunouraya masimu here?",
+        "Mvura yakabikwa inenge isina masimu here?",
+        "Ndingaita mvura yakachengeteka nekui bika here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Boiling kills many germs and makes water safer to drink.",
+      "shona": "Kubika kunouraya masimu mazhinji uye kunoita mvura ive yakachengeteka kunwiwa."
+    },
+    "answer_steps": {
+      "en": [
+        "Boil the water fully for at least 1 minute.",
+        "Let it cool without adding dirty water.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Bika mvura zvizere kweminiti imwe.",
+        "Rega itonhore pasina kuwedzera mvura ine tsvina.",
+        "Chengeta mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Boiling does not remove dirt, so filter cloudy water first.",
+      "shona": "Kubika hakubvisi tsvina inooneka, saka sefa mvura ine makore kutanga."
+    },
+    "follow_up_question": null,
+    "tags": ["boiling", "kill germs", "boiled water", "kubika", "kuuraya masimu", "mvura yakabikwa", "yakachengeteka"]
+  },
+  {
+    "intent_id": "water_cloudy_why",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why is my water cloudy or dirty?",
+      "shona": "Sei mvura yangu iine makore kana yakasviba?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why is water brown?",
+        "What makes water cloudy?",
+        "Why does my water look dirty?"
+      ],
+      "shona": [
+        "Sei mvura ichiita brown?",
+        "Chii chinoita kuti mvura ive nemakore?",
+        "Sei mvura yangu ichiita yakasviba?"
+      ]
+    },
+    "answer_short": {
+      "en": "Cloudy or dirty water may contain soil, waste, or germs from the source or the container.",
+      "shona": "Mvura ine makore kana yakasviba inogona kuva neivhu, tsvina, kana masimu kubva kusosi kana mumudziyo."
+    },
+    "answer_steps": {
+      "en": [
+        "Let heavy dirt settle if possible.",
+        "Filter the water with a clean cloth.",
+        "Boil or treat it before drinking."
+      ],
+      "shona": [
+        "Regai tsvina inorema inyure pasi kana zvichibvira.",
+        "Sefai mvura nejira rakachena.",
+        "Bikai kana kuirapa musati mainwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Cloudy water should not be drunk without cleaning and treatment.",
+      "shona": "Mvura ine makore haifaniri kunwiwa isina kusefwa nekubikwa kana kurapwa."
+    },
+    "follow_up_question": {
+      "en": "Is it very cloudy or only slightly dirty?",
+      "shona": "Iine makore mazhinji here kana kuti yakasviba zvishoma?"
+    },
+    "tags": ["cloudy water", "dirty water", "brown water", "makore", "mvura yakasviba", "brown", "sefa", "bika"]
+  },
+  {
+    "intent_id": "water_cloudy_drink",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Can I drink cloudy water?",
+      "shona": "Ndinganwa mvura ine makore here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Is cloudy water safe?",
+        "Should I drink dirty-looking water?",
+        "Can brown water be used for drinking?"
+      ],
+      "shona": [
+        "Mvura ine makore yakachengeteka here?",
+        "Zvakanaka here kunwa mvura inoita seyakashata?",
+        "Mvura yebrown inganwiwa here?"
+      ]
+    },
+    "answer_short": {
+      "en": "No. Cloudy water should be cleaned and treated before drinking.",
+      "shona": "Kwete. Mvura ine makore inofanira kutanga yacheneswa nekurerapwa isati yanwiwa."
+    },
+    "answer_steps": {
+      "en": [
+        "Filter it with a clean cloth or sand filter.",
+        "Boil it or treat it with chlorine.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Sefai nejira rakachena kana sefa yejecha.",
+        "Bikai kana kuirapa nechlorine.",
+        "Chengetai mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not drink cloudy water as it is.",
+      "shona": "Usanwa mvura ine makore yakadaro."
+    },
+    "follow_up_question": null,
+    "tags": ["cloudy water", "drink dirty water", "safe", "mvura ine makore", "kunwa", "yakachengeteka", "yakasviba"]
+  },
+  {
+    "intent_id": "water_cloudy_clean",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How can I clean dirty water?",
+      "shona": "Ndingachenesa sei mvura yakasviba?"
+    },
+    "sample_variations": {
+      "en": [
+        "How do I filter dirty water?",
+        "How can I clean cloudy water?",
+        "What should I do with dirty water?"
+      ],
+      "shona": [
+        "Ndoisefa sei mvura yakasviba?",
+        "Ndingachenesa sei mvura ine makore?",
+        "Ndoita sei nemvura ine tsvina?"
+      ]
+    },
+    "answer_short": {
+      "en": "Clean dirty water by filtering it first and then boiling or treating it.",
+      "shona": "Chenesa mvura yakasviba nekuisefa kutanga wobva wai bika kana kui rapa."
+    },
+    "answer_steps": {
+      "en": [
+        "Pour the water through a clean cloth, or use a sand filter.",
+        "Boil it for at least 1 minute or add chlorine.",
+        "Keep it in a clean container with a lid."
+      ],
+      "shona": [
+        "Dururai mvura nejira rakachena kana kushandisa sefa yejecha.",
+        "Bikai kweminiti imwe kana kuisa chlorine.",
+        "Chengetai mumudziyo wakachena une chivharo."
+      ]
+    },
+    "answer_warning": {
+      "en": "Filtering alone is not enough to make dirty water safe.",
+      "shona": "Kusefa chete hakukwanisi kuita mvura yakasviba yakachengeteka."
+    },
+    "follow_up_question": null,
+    "tags": ["clean dirty water", "filter", "cloudy", "dirty water", "chenesa mvura", "sefa", "mvura ine makore", "yakasviba"]
+  },
+  {
+    "intent_id": "dirty_water_action",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "My water is dirty, what should I do?",
+      "shona": "Mvura yangu yakasviba, ndoita sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "I have dirty water.",
+        "My water is not clean.",
+        "What do I do with dirty water?"
+      ],
+      "shona": [
+        "Ndine mvura yakasviba.",
+        "Mvura yangu haina kuchena.",
+        "Ndoita sei nemvura ine tsvina?"
+      ]
+    },
+    "answer_short": {
+      "en": "If your water is dirty, clean it first and then treat it before drinking.",
+      "shona": "Kana mvura yenyu yakasviba, tanga maichenesa wobva mairapa musati mainwa."
+    },
+    "answer_steps": {
+      "en": [
+        "If it is very cloudy, let the dirt settle and filter it with a clean cloth.",
+        "Boil it for at least 1 minute or treat it with chlorine.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Kana iine makore mazhinji, regai tsvina inyure pasi mozosefa nejira rakachena.",
+        "Bikai kweminiti imwe kana kuirapa nechlorine.",
+        "Chengetai mumudziyo wakachena wakafukidzwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Dirty water can spread disease if it is drunk without treatment.",
+      "shona": "Mvura yakasviba inogona kuparadzira chirwere kana ikanwiwa isina kurapwa."
+    },
+    "follow_up_question": {
+      "en": "Is it very cloudy or just slightly dirty?",
+      "shona": "Iine makore mazhinji here kana kuti yakasviba zvishoma?"
+    },
+    "tags": ["dirty water", "what should I do", "cloudy", "mvura yakasviba", "ndoita sei", "makore", "kurapa", "sefa"]
+  },
+  {
+    "intent_id": "river_water_action",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "I only use river water, how can I make it safe?",
+      "shona": "Ndinongoshandisa mvura yerwizi chete, ndingaichengetedza sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "Only river water is available.",
+        "How do I make river water safe?",
+        "I depend on river water for drinking."
+      ],
+      "shona": [
+        "Ndine mvura yerwizi chete.",
+        "Ndoita sei kuti mvura yerwizi ive yakachengeteka?",
+        "Ndinovimba nemvura yerwizi pakunwa."
+      ]
+    },
+    "answer_short": {
+      "en": "River water can be used only after it has been filtered if dirty and then boiled or treated.",
+      "shona": "Mvura yerwizi inogona kushandiswa chete kana yasefwa kana iine tsvina yobva yabikwa kana kurapwa."
+    },
+    "answer_steps": {
+      "en": [
+        "If the water is dirty, filter it first.",
+        "Boil it for at least 1 minute or add chlorine.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Kana mvura yakasviba, tanga waisefa.",
+        "Bika kweminiti imwe kana kuisa chlorine.",
+        "Chengeta mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not depend on untreated river water for drinking.",
+      "shona": "Usavimba nemvura yerwizi isina kurapwa pakunwa."
+    },
+    "follow_up_question": {
+      "en": "Is the river water clear or dirty?",
+      "shona": "Mvura yerwizi yacho yakachena here kana yakasviba?"
+    },
+    "tags": ["only river water", "make safe", "river", "filter", "mvura yerwizi chete", "yakachengeteka", "rwizi", "sefa"]
+  },
+  {
+    "intent_id": "no_clean_water",
+    "topic": "Water Safety",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What should I do if I do not have clean water?",
+      "shona": "Ndoita sei kana ndisina mvura yakachena?"
+    },
+    "sample_variations": {
+      "en": [
+        "I have no clean water.",
+        "What if clean water is not available?",
+        "There is no safe water at home."
+      ],
+      "shona": [
+        "Handina mvura yakachena.",
+        "Ndoita sei kana mvura yakachena isipo?",
+        "Pamba hapana mvura yakachengeteka."
+      ]
+    },
+    "answer_short": {
+      "en": "Treat whatever water you have before drinking it.",
+      "shona": "Rapai mvura yamunayo musati mainwa."
+    },
+    "answer_steps": {
+      "en": [
+        "If the water is cloudy, filter it through a clean cloth.",
+        "Boil it for at least 1 minute or use chlorine.",
+        "Store it in a clean, covered container."
+      ],
+      "shona": [
+        "Kana mvura iine makore, sefani nejira rakachena.",
+        "Bikai kweminiti imwe kana kushandisa chlorine.",
+        "Chengetai mumudziyo wakachena wakavharwa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Never drink untreated water, even when you are very thirsty.",
+      "shona": "Musambonwa mvura isina kurapwa kunyange muchinyanya kuva nenyota."
+    },
+    "follow_up_question": null,
+    "tags": ["no clean water", "safe water unavailable", "treat water", "handina mvura yakachena", "mvura yakachengeteka", "rapa mvura", "bika", "chlorine"]
+  }
+]

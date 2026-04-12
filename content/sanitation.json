@@ -1,0 +1,250 @@
+[
+  {
+    "intent_id": "sanitation_what",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What is sanitation?",
+      "shona": "Sanitation chii?"
+    },
+    "sample_variations": {
+      "en": [
+        "What does sanitation mean?",
+        "Tell me about sanitation.",
+        "What is meant by sanitation?"
+      ],
+      "shona": [
+        "Sanitation inorevei?",
+        "Ndiudzei nezvesanitation.",
+        "Zvinonzi sanitation chii?"
+      ]
+    },
+    "answer_short": {
+      "en": "Sanitation means managing human waste safely and keeping the environment clean to prevent disease.",
+      "shona": "Sanitation zvinoreva kubata tsvina yevanhu zvakanaka uye kuchengeta nharaunda yakachena kuti chirwere chisapararire."
+    },
+    "answer_steps": null,
+    "answer_warning": null,
+    "follow_up_question": null,
+    "tags": ["sanitation", "meaning", "clean environment", "sanitation", "zvinorevei", "nharaunda yakachena", "tsvina"]
+  },
+  {
+    "intent_id": "sanitation_why",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why is sanitation important?",
+      "shona": "Sei sanitation ichikosha?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why does sanitation matter?",
+        "How does sanitation help?",
+        "Why should we care about sanitation?"
+      ],
+      "shona": [
+        "Sei sanitation ichikosha?",
+        "Sanitation inobatsira nei?",
+        "Nei tichifanira kukoshesa sanitation?"
+      ]
+    },
+    "answer_short": {
+      "en": "Good sanitation helps stop cholera, typhoid, diarrhoea, and other diseases from spreading.",
+      "shona": "Sanitation yakanaka inobatsira kudzivirira korora, typhoid, manyoka, nezvimwe zvirwere kuti zvisapararire."
+    },
+    "answer_steps": null,
+    "answer_warning": null,
+    "follow_up_question": null,
+    "tags": ["sanitation important", "disease prevention", "cholera", "sanitation inokosha", "chirwere", "korora", "manyoka"]
+  },
+  {
+    "intent_id": "sanitation_diseases",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What diseases are caused by poor sanitation?",
+      "shona": "Ndezvipi zvirwere zvinokonzerwa nesanitation isina kunaka?"
+    },
+    "sample_variations": {
+      "en": [
+        "What sicknesses come from bad sanitation?",
+        "Which diseases spread because of poor sanitation?",
+        "Can bad sanitation cause illness?"
+      ],
+      "shona": [
+        "Ndezvipi zvirwere zvinobva kusanitation yakaipa?",
+        "Zvirwere zvipi zvinopararira nekuda kwesanitation isina kunaka?",
+        "Sanitation yakaipa inogona kukonzera kurwara here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Poor sanitation can cause diarrhoea, cholera, typhoid, and other waterborne diseases.",
+      "shona": "Sanitation isina kunaka inogona kukonzera manyoka, korora, typhoid, nezvimwe zvirwere zvemvura."
+    },
+    "answer_steps": null,
+    "answer_warning": null,
+    "follow_up_question": null,
+    "tags": ["poor sanitation diseases", "cholera", "typhoid", "diarrhoea", "sanitation yakaipa", "korora", "typhoid", "manyoka"]
+  },
+  {
+    "intent_id": "sanitation_health_impact",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How does poor sanitation affect health?",
+      "shona": "Sanitation isina kunaka inokanganisa utano sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "What happens if sanitation is bad?",
+        "How does bad sanitation harm people?",
+        "What is the health impact of poor sanitation?"
+      ],
+      "shona": [
+        "Chii chinoitika kana sanitation yakaipa?",
+        "Sanitation isina kunaka inokuvadza vanhu sei?",
+        "Utano hunokanganiswa sei nesanitation yakaipa?"
+      ]
+    },
+    "answer_short": {
+      "en": "Poor sanitation allows germs to spread into water, food, and homes, causing sickness.",
+      "shona": "Sanitation isina kunaka inoita kuti masimu apararire mumvura, muchikafu, nemudzimba zvichikonzera kurwara."
+    },
+    "answer_steps": {
+      "en": [
+        "Use a toilet every time.",
+        "Wash hands after using the toilet.",
+        "Keep waste away from water and food."
+      ],
+      "shona": [
+        "Shandisai chimbuzi nguva dzose.",
+        "Gezai maoko mushure mekushandisa chimbuzi.",
+        "Chengetai tsvina kure nemvura nechikafu."
+      ]
+    },
+    "answer_warning": {
+      "en": "Children are especially at risk when sanitation is poor.",
+      "shona": "Vana ndivo vanonyanya kuva panjodzi kana sanitation isina kunaka."
+    },
+    "follow_up_question": null,
+    "tags": ["health impact", "poor sanitation", "germs", "utano", "sanitation isina kunaka", "masimu", "chirwere"]
+  },
+  {
+    "intent_id": "toilet_why",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why should I use a toilet?",
+      "shona": "Sei ndichifanira kushandisa chimbuzi?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why is using a toilet important?",
+        "Why not go outside?",
+        "What is the benefit of using a toilet?"
+      ],
+      "shona": [
+        "Sei kushandisa chimbuzi kuchikosha?",
+        "Sei ndisingafaniri kuzvibatsira panze?",
+        "Chimbuzi chinobatsira nei?"
+      ]
+    },
+    "answer_short": {
+      "en": "Using a toilet keeps waste away from water, food, and living areas.",
+      "shona": "Kushandisa chimbuzi kunochengeta tsvina kure nemvura, chikafu, nenzvimbo dzinogarwa."
+    },
+    "answer_steps": null,
+    "answer_warning": {
+      "en": "Open defecation spreads disease through flies, rain, and contact.",
+      "shona": "Kuzvibatsira panze kunoparadzira chirwere kuburikidza nemakonye, mvura yemvura, uye kubata."
+    },
+    "follow_up_question": null,
+    "tags": ["use toilet", "latrine", "open defecation", "shandisa chimbuzi", "chimbuzi", "panze", "chirwere"]
+  },
+  {
+    "intent_id": "open_defecation",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Is open defecation dangerous?",
+      "shona": "Kuzvibatsira panze kune ngozi here?"
+    },
+    "sample_variations": {
+      "en": [
+        "Is going outside dangerous?",
+        "Why is open defecation bad?",
+        "Can open defecation make people sick?"
+      ],
+      "shona": [
+        "Kuzvibatsira panze kune ngozi here?",
+        "Sei kuzvibatsira panze kwakaipa?",
+        "Kuzvibatsira panze kunorwarisa vanhu here?"
+      ]
+    },
+    "answer_short": {
+      "en": "Yes. Open defecation spreads germs into the environment and can cause serious disease.",
+      "shona": "Hongu. Kuzvibatsira panze kunoparadzira masimu munharaunda uye kunogona kukonzera chirwere chakakomba."
+    },
+    "answer_steps": {
+      "en": [
+        "Use a toilet or latrine every time.",
+        "Teach children to use safe toilet places.",
+        "Wash hands after using the toilet."
+      ],
+      "shona": [
+        "Shandisai chimbuzi kana latrine nguva dzose.",
+        "Dzidzisai vana kushandisa nzvimbo dzakachengeteka dzekuzvibatsira.",
+        "Gezai maoko mushure mekushandisa chimbuzi."
+      ]
+    },
+    "answer_warning": {
+      "en": "Open defecation is dangerous for the whole community, especially children.",
+      "shona": "Kuzvibatsira panze kune ngozi kunharaunda yose, kunyanya kuvana."
+    },
+    "follow_up_question": null,
+    "tags": ["open defecation", "going outside", "danger", "kuzvibatsira panze", "ngozi", "chimbuzi", "vana"]
+  },
+  {
+    "intent_id": "toilet_clean",
+    "topic": "Sanitation",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How can I keep my toilet clean?",
+      "shona": "Ndingachengeta sei chimbuzi changu chakachena?"
+    },
+    "sample_variations": {
+      "en": [
+        "How do I clean a latrine?",
+        "How should I keep the toilet hygienic?",
+        "What are toilet hygiene tips?"
+      ],
+      "shona": [
+        "Ndinonatsa sei latrine?",
+        "Ndingachengeta sei chimbuzi chiri chakachena?",
+        "Pane mazano api ekuchengeta chimbuzi?"
+      ]
+    },
+    "answer_short": {
+      "en": "Clean the toilet often and keep the area around it tidy and dry.",
+      "shona": "Chenesai chimbuzi nguva dzose uye chengetai nzvimbo yacho yakatsvinda uye yakaoma."
+    },
+    "answer_steps": {
+      "en": [
+        "Clean the toilet regularly with water and a cleaning agent.",
+        "Keep the toilet covered when it is not in use.",
+        "Wash hands after use and dispose of waste properly."
+      ],
+      "shona": [
+        "Chenesa chimbuzi nguva dzose nemvura nechinhu chekuchenesa.",
+        "Chivharai chimbuzi kana chisiri kushandiswa.",
+        "Gezai maoko mushure mekushandisa uye rasai tsvina zvakanaka."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not leave waste near water sources or homes.",
+      "shona": "Musasiye tsvina pedyo nemvura kana mudzimba."
+    },
+    "follow_up_question": null,
+    "tags": ["clean toilet", "latrine hygiene", "toilet hygiene", "chenesa chimbuzi", "latrine", "utsanana", "tsvina"]
+  }
+]

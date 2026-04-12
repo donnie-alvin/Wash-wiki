@@ -1,0 +1,9 @@
+{
+  "name": "wash-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shona-first sanitation education chatbot content store for Bikita District",
+  "scripts": {
+    "test": "node --test"
+  }
+}

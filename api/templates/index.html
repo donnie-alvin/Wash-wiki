@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wash Wiki Chat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 480px;
+      margin: auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: #2e7d32;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+    }
+
+    .lang-toggle {
+      background: white;
+      color: #2e7d32;
+      border: none;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .topic-bar {
+      background: white;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      padding: 8px 12px;
+    }
+
+    .topic-btn {
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-radius: 16px;
+      white-space: nowrap;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    .chat-area {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .msg {
+      max-width: 80%;
+      padding: 8px 12px;
+      border-radius: 12px;
+      line-height: 1.4;
+    }
+
+    .bot {
+      background: white;
+      border: 1px solid #ddd;
+      align-self: flex-start;
+      border-bottom-left-radius: 2px;
+    }
+
+    .user {
+      background: #dcf8c6;
+      align-self: flex-end;
+      border-bottom-right-radius: 2px;
+    }
+
+    .warning {
+      background: #fff3e0;
+      border: 1px solid #ffcc80;
+      color: #e65100;
+      align-self: flex-start;
+    }
+
+    .steps {
+      background: #e3f2fd;
+      border: 1px solid #90caf9;
+      align-self: flex-start;
+    }
+
+    .typing {
+      background: white;
+      border: 1px solid #ddd;
+      align-self: flex-start;
+      border-bottom-left-radius: 2px;
+      font-style: italic;
+      color: grey;
+    }
+
+    .input-row {
+      background: white;
+      border-top: 1px solid #ddd;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    input {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    button[type=submit] {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>Wash Wiki Chat</div>
+    <button class="lang-toggle" id="lang-toggle" type="button">EN / SN</button>
+  </div>
+  <div class="topic-bar">
+    <button class="topic-btn" type="button">water safety</button>
+    <button class="topic-btn" type="button">handwashing</button>
+    <button class="topic-btn" type="button">sanitation</button>
+    <button class="topic-btn" type="button">disease prevention</button>
+  </div>
+  <div class="chat-area" id="chat-area"></div>
+  <div class="input-row">
+    <input id="message-input" type="text" placeholder="Type your message">
+    <button id="send-button" type="submit" aria-label="Send">&#10148;</button>
+  </div>
+
+  <script>
+    let currentLanguage = "shona";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!sessionStorage.getItem("session_id")) {
+        sessionStorage.setItem("session_id", generateSessionId());
+      }
+
+      appendMessage("Mhoro! Welcome to Wash Wiki. Ndibvunzei nezvemvura, kugeza maoko, zvimbuzi, kana kudzivirira zvirwere.", "bot");
+
+      document.getElementById("lang-toggle").addEventListener("click", () => {
+        if (currentLanguage === "shona") {
+          sendMessage("speak English");
+        } else {
+          sendMessage("taura chiShona");
+        }
+      });
+
+      document.querySelectorAll(".topic-bar .topic-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          sendMessage(button.textContent);
+        });
+      });
+
+      document.getElementById("send-button").addEventListener("click", () => {
+        sendMessage(document.getElementById("message-input").value.trim());
+      });
+
+      document.getElementById("message-input").addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          sendMessage(event.target.value.trim());
+        }
+      });
+    });
+
+    function generateSessionId() {
+      if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+        return crypto.randomUUID();
+      }
+
+      if (typeof crypto !== "undefined" && typeof crypto.getRandomValues === "function") {
+        const bytes = new Uint8Array(16);
+        crypto.getRandomValues(bytes);
+        bytes[6] = (bytes[6] & 0x0f) | 0x40;
+        bytes[8] = (bytes[8] & 0x3f) | 0x80;
+        const hex = Array.from(bytes, (b) => b.toString(16).padStart(2, "0"));
+        return `${hex.slice(0, 4).join("")}-${hex.slice(4, 6).join("")}-${hex.slice(6, 8).join("")}-${hex.slice(8, 10).join("")}-${hex.slice(10, 16).join("")}`;
+      }
+
+      return `session-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    }
+
+    function appendMessage(text, className) {
+      const chatArea = document.getElementById("chat-area");
+      const message = document.createElement("div");
+      message.className = `msg ${className}`;
+      message.textContent = text;
+      chatArea.appendChild(message);
+      scrollToBottom();
+      return message;
+    }
+
+    function sendMessage(text) {
+      if (!text) {
+        return;
+      }
+
+      const sessionId = sessionStorage.getItem("session_id");
+      const input = document.getElementById("message-input");
+
+      appendMessage(text, "user");
+      input.value = "";
+
+      const typingIndicator = appendMessage("...", "typing");
+
+      fetch("/message", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          session_id: sessionId,
+          user_message: text,
+          language: currentLanguage
+        })
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          typingIndicator.remove();
+          renderResponse(data);
+        })
+        .catch(() => {
+          typingIndicator.remove();
+          appendMessage("Unable to reach the server. Please try again.", "bot");
+        });
+    }
+
+    function renderResponse(data) {
+      const chatArea = document.getElementById("chat-area");
+
+      appendMessage(data.response_text, "bot");
+
+      if (Array.isArray(data.steps) && data.steps.length > 0) {
+        const steps = document.createElement("div");
+        steps.className = "msg steps";
+        const list = document.createElement("ol");
+
+        data.steps.forEach((step) => {
+          const item = document.createElement("li");
+          item.textContent = step;
+          list.appendChild(item);
+        });
+
+        steps.appendChild(list);
+        chatArea.appendChild(steps);
+      }
+
+      if (data.warning) {
+        appendMessage(`⚠️ ${data.warning}`, "warning");
+      }
+
+      if (data.follow_up) {
+        appendMessage(data.follow_up, "bot");
+      }
+
+      if (data.is_fallback && data.topic_menu) {
+        data.topic_menu.forEach((item) => {
+          const button = document.createElement("button");
+          button.className = "topic-btn";
+          button.type = "button";
+          button.textContent = item;
+          button.addEventListener("click", () => sendMessage(item));
+          chatArea.appendChild(button);
+        });
+      }
+
+      currentLanguage = data.language;
+      scrollToBottom();
+    }
+
+    function scrollToBottom() {
+      const chatArea = document.getElementById("chat-area");
+      chatArea.scrollTop = chatArea.scrollHeight;
+    }
+  </script>
+</body>
+</html>

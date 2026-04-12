@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "intent_id",
+    "topic",
+    "language",
+    "canonical_question",
+    "sample_variations",
+    "answer_short",
+    "tags"
+  ],
+  "properties": {
+    "intent_id": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "canonical_question": {
+      "type": "object",
+      "required": ["en", "shona"],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "shona": {
+          "type": "string"
+        }
+      }
+    },
+    "sample_variations": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "shona": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "answer_short": {
+      "type": "object",
+      "required": ["en", "shona"],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "shona": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,672 @@
+---
+chat_title: Bikita Sanitation Bot Specs
+conversation_count: 1
+---
+
+<user_query n="1">
+Below is a full product and technical specification for the sanitation education chatbot, based on the uploaded brief.
+
+Sanitation Education Chatbot for Bikita District
+
+Full Specification
+
+1. Product Overview
+
+The Sanitation Education Chatbot is a mobile-friendly conversational assistant designed to provide simple, practical, and culturally appropriate sanitation, hygiene, and water safety education to communities in Bikita District. It is intended primarily for rural users, including people with low literacy levels, and should work well on mobile-first channels such as WhatsApp or SMS-style chat. The chatbot should default to Shona, with English as an optional language.
+
+Its core purpose is to help users understand and act on safe hygiene, sanitation, and water treatment practices, especially in contexts where communities face unsafe water, poor sanitation, limited infrastructure, and inconsistent health education.
+
+2. Goals
+
+The chatbot must:
+
+- Educate users on sanitation, hygiene, and safe water practices.
+- Address local challenges in Bikita District, including unsafe water, microbial contamination, cloudy water, and possible chemical risks.
+- Provide practical, step-by-step guidance users can follow immediately.
+- Be available at any time to reduce the gap caused by irregular education campaigns.
+- Support user questions interactively rather than only pushing static messages.
+- Reduce language barriers by supporting Shona fully and English optionally.
+
+3. Target Users
+
+Primary users include:
+
+- Rural community members in Bikita District
+- Users with basic or low literacy
+- Mobile phone users
+- People using WhatsApp or a simple text-based interface
+- Users seeking quick health and sanitation advice in plain language
+
+4. Scope
+
+In Scope
+
+The chatbot will:
+
+- Answer sanitation and hygiene questions
+- Explain safe water practices
+- Provide instructions for water treatment
+- Explain risks of unsafe water and poor sanitation
+- Give warnings related to contaminated water and disease prevention
+- Support interactive flows with follow-up questions
+- Handle multiple phrasings of the same question
+- Respond in Shona by default and optionally in English
+- Organize knowledge into clear topic areas:
+  - Water Safety
+  - Handwashing
+  - Sanitation
+  - Disease Prevention
+
+Out of Scope
+
+The chatbot will not:
+
+- Diagnose diseases
+- Replace health professionals
+- Provide emergency clinical treatment advice beyond basic prevention and referral guidance
+- Act as a laboratory or official water testing system
+- Offer highly technical chemical analysis explanations
+
+5. Functional Requirements
+
+5.1 Question Answering
+
+The chatbot must allow users to ask free-text questions such as:
+
+- Why boil water?
+- How do I clean water?
+- Why wash hands?
+- Can I drink river water?
+- What should I do during a cholera outbreak?
+
+The chatbot must return short, simple answers.
+
+5.2 Instruction Delivery
+
+The chatbot must provide step-by-step guidance where appropriate.
+
+Example:
+
+- boil water
+- let it cool
+- store it in a clean container
+
+5.3 Warning Messages
+
+The chatbot must be able to deliver direct warnings such as:
+
+- Do not drink untreated water
+- Dirty water can cause disease
+- Open defecation spreads disease
+
+5.4 Interactive Follow-Up
+
+The chatbot must support guided flows.
+
+Example:
+
+- Bot asks: “Is your water clear or dirty?”
+- User responds: “Dirty”
+- Bot gives next step: “Filter and boil the water before drinking.”
+
+5.5 Multi-Language Support
+
+The chatbot must:
+
+- Default to Shona
+- Offer English as an option
+- Support bilingual presentation where needed
+- Maintain simple wording in both languages
+
+5.6 Intent Variation Handling
+
+Each key question must support multiple phrasings that map to the same answer.
+
+Example variations:
+
+- Can I drink river water?
+- Is river water safe?
+- Can I use river water for drinking?
+
+5.7 Topic-Based Navigation
+
+The chatbot should support browsing or menu access by topic:
+
+- Water Safety
+- Handwashing
+- Sanitation
+- Disease Prevention
+
+5.8 Mobile Optimization
+
+The chatbot must work effectively on:
+
+- WhatsApp
+- low-bandwidth mobile networks
+- simple chat interfaces
+- small phone screens
+
+6. Content Requirements
+
+6.1 Core Content Domains
+
+A. Sanitation Education
+
+Must cover:
+
+- handwashing practices
+- safe water handling
+- latrine use and hygiene
+- waste disposal
+
+B. Identified Gaps to Solve
+
+The chatbot must address:
+
+- low understanding of public health messages by using simple language
+- low interaction in existing campaigns by allowing questions
+- language barriers by using Shona
+- irregular education by being available anytime
+
+C. Water Quality Education
+
+Must explain:
+
+- microbial contamination
+- cloudy or dirty water
+- chemical risks such as sulphates
+- risks of apparently clear water
+- risks in local sources such as river water and Matezva Dam water
+
+7. Knowledge Structure
+
+The chatbot content base must be organized into the following modules.
+
+7.1 Water Safety
+
+Includes:
+
+- safe vs unsafe water
+- river water risks
+- boiling water
+- treating water at home
+- clean-looking water still being unsafe
+- storage in clean containers
+
+7.2 Handwashing
+
+Includes:
+
+- why handwashing matters
+- when to wash hands
+- how to wash hands properly
+- what to use when soap is unavailable, including ash as a practical alternative
+
+7.3 Sanitation
+
+Includes:
+
+- what sanitation is
+- importance of sanitation
+- toilet use
+- dangers of open defecation
+- toilet cleaning
+- waste disposal
+
+7.4 Disease Prevention
+
+Includes:
+
+- diarrhoea
+- cholera
+- typhoid
+- contamination prevention
+- rainy season risk
+- cholera outbreak behavior guidance
+
+Each module must contain:
+
+- questions and answers
+- instructions
+- warnings
+
+8. Conversation Design Specification
+
+8.1 Tone
+
+Responses must be:
+
+- simple
+- friendly
+- clear
+- practical
+- non-technical
+
+8.2 Response Length
+
+Each response should typically be 1 to 3 sentences unless a step-by-step instruction is needed.
+
+8.3 Language Behavior
+
+Default behavior:
+
+- greet in Shona
+- answer in Shona unless user requests English
+- optionally provide English alongside Shona for bilingual deployments
+
+8.4 Response Template
+
+Recommended response pattern:
+
+- User question
+- Direct answer
+- Action step if needed
+- Warning if relevant
+- Optional translation or bilingual mirror
+
+8.5 Follow-Up Logic
+
+The chatbot should ask follow-up questions when user input is incomplete.
+
+Examples:
+
+- Is the water clear or dirty?
+- Do you have soap?
+- Are you using river water, borehole water, or dam water?
+- Do you want the answer in Shona or English?
+
+8.6 Escalation Guidance
+
+When the user describes severe illness or an emergency-like situation, the chatbot should advise seeking help from a local clinic or health worker rather than continuing as if it can diagnose or treat.
+
+9. Detailed Intent Specification
+
+9.1 General Sanitation
+
+Supported intents include:
+
+- What is sanitation?
+- Why is sanitation important?
+- What diseases are caused by poor sanitation?
+- How does poor sanitation affect health?
+
+9.2 Handwashing and Hygiene
+
+Supported intents include:
+
+- Why is handwashing important?
+- When should I wash my hands?
+- How do I wash my hands properly?
+- What should I do if I do not have soap?
+
+9.3 Water Safety
+
+Supported intents include:
+
+- Is my water safe to drink?
+- Can I drink river water?
+- Why should I boil water?
+- How long should I boil water?
+- If water looks clean, is it safe?
+- How can I treat water at home?
+
+9.4 Bikita-Specific Water Quality Issues
+
+Supported intents include:
+
+- Why does water sometimes look green?
+- Why does water smell bad or taste strange?
+- Is water from Matezva Dam safe to drink?
+- Can mining activities affect water quality?
+
+9.5 Microbial Contamination
+
+Supported intents include:
+
+- What are germs in water?
+- What is E. coli?
+- How does water become contaminated?
+- Can boiling water remove germs?
+
+9.6 Turbidity
+
+Supported intents include:
+
+- Why is my water cloudy or dirty?
+- Can I drink cloudy water?
+- How can I clean dirty water?
+
+9.7 Sanitation Facilities
+
+Supported intents include:
+
+- Why should I use a toilet?
+- Is open defecation dangerous?
+- How can I keep my toilet clean?
+
+9.8 Practical Constraints
+
+Supported intents include:
+
+- What should I do if I do not have clean water?
+- How can I protect myself from diseases?
+
+9.9 Seasonal Issues
+
+Supported intents include:
+
+- Why do diseases increase during the rainy season?
+- What should I do during a cholera outbreak?
+
+9.10 Decision-Based Logic
+
+Supported intents include:
+
+- My water is dirty, what should I do?
+- I do not have soap, what should I do?
+- I only use river water, how can I make it safe?
+
+10. Intent Data Model
+
+Each chatbot intent should include:
+
+- intent_id
+- topic
+- language
+- canonical_question
+- sample_variations
+- answer_short
+- answer_steps
+- answer_warning
+- follow_up_question
+- tags
+
+Example:
+
+intent_id: water_river_safe topic: Water Safety language: shona/en canonical_question: Can I drink river water? sample_variations:
+
+- Is river water safe?
+- Can I use river water for drinking?
+- Can I drink water from the river? answer_short: River water may contain germs and should not be drunk untreated. answer_steps:
+
+1. Filter if dirty
+2. Boil or treat
+3. Store in a clean container answer_warning: Do not drink untreated river water. follow_up_question: Is the water clear or dirty?
+
+11. Sample Intent Mapping Structure
+
+A practical JSON-style structure could be:
+
+{   "intent_id": "water_treatment_home",   "topic": "Water Safety",   "language": "shona",   "canonical_question": "Ndingachenesa sei mvura kumba?",   "variations": [     "Ndingaita sei kuti mvura ive yakachena?",     "Ndinorapa sei mvura kumba?",     "Ndingachenesa sei mvura yekunwa?"   ],   "response": {     "short": "Unogona kubika, kushandisa chlorine kana kusefa mvura usati wanwa.",     "steps": [       "Kana mvura yakasviba, itange yasefwa",       "Bika kana kuirapa nechlorine",       "Chengeta mumudziyo wakachena"     ],     "warning": "Usanwa mvura isina kurapwa."   },   "follow_up": "Mvura yako yakachena here kana yakasviba?" }
+
+12. Non-Functional Requirements
+
+12.1 Usability
+
+The chatbot must be easy to use for low-literacy users:
+
+- simple vocabulary
+- short replies
+- limited jargon
+- clear prompts
+- obvious next steps
+
+12.2 Performance
+
+The chatbot should:
+
+- respond quickly
+- avoid long delays
+- work on mobile devices with low bandwidth
+
+12.3 Accessibility
+
+The system should:
+
+- work in simple text environments
+- avoid complex layouts
+- support possible future voice integration, though text is primary
+
+12.4 Reliability
+
+The chatbot should:
+
+- return stable answers to common health and sanitation questions
+- handle repeated or differently phrased inputs consistently
+
+12.5 Cultural Appropriateness
+
+The chatbot must:
+
+- use locally understandable language
+- reflect realistic household conditions
+- avoid urban-only assumptions
+- respect local practices while encouraging safe behavior
+
+13. Platform Requirements
+
+Preferred deployment channels:
+
+- WhatsApp
+- SMS-like interface
+- lightweight web chat or mobile chat interface
+
+Minimum technical needs:
+
+- text input and output
+- language toggle
+- intent recognition
+- response retrieval
+- simple branching logic
+- analytics logging for common questions and failures
+
+14. Recommended System Architecture
+
+14.1 Front End
+
+User interface for:
+
+- chat input
+- chat output
+- language selection
+- menu/topic shortcuts
+
+14.2 Backend Logic
+
+Should include:
+
+- intent recognition engine
+- response database or knowledge base
+- flow manager for follow-up questions
+- fallback handler for unknown inputs
+- analytics/logging
+
+14.3 Content Store
+
+A structured content repository containing:
+
+- English responses
+- Shona responses
+- question variations
+- follow-up prompts
+- warnings
+- step-by-step guidance
+
+14.4 Admin Content Update Layer
+
+Optional but recommended:
+
+- add or revise questions
+- update wording
+- add new local outbreak guidance
+- improve phrasing based on user logs
+
+15. NLP / Logic Requirements
+
+The chatbot does not need highly advanced AI to start. A rules-first or hybrid approach is appropriate.
+
+Recommended capabilities:
+
+- keyword matching
+- synonym and variation matching
+- phrase normalization
+- multilingual intent mapping
+- fallback to menu suggestions when uncertain
+
+Example normalization:
+
+- “river water”
+- “water from river”
+- “rwizi water” All map to the same intent.
+
+16. Fallback Behavior
+
+When the chatbot does not understand a question, it should respond with something like:
+
+Shona: “Handina kunyatsonzwisisa mubvunzo wenyu. Munogona kubvunza nezvemvura, kugeza maoko, zvimbuzi, kana kudzivirira zvirwere.”
+
+English: “I did not fully understand your question. You can ask about water safety, handwashing, toilets, or disease prevention.”
+
+The fallback should also offer topic suggestions.
+
+17. Safety and Content Boundaries
+
+The chatbot must avoid:
+
+- medical diagnosis
+- false certainty about specific water sources unless framed carefully
+- technical or scientific overload
+- unsafe advice
+
+When discussing local sources such as Matezva Dam, wording should remain cautious:
+
+- “It may be contaminated, so it should be treated or boiled before drinking.”
+
+18. Content Validation Requirements
+
+Content should be validated against:
+
+- field findings from Bikita District
+- water quality evidence
+- WHO hygiene and sanitation guidance
+
+A review workflow should include:
+
+- health content review
+- language review in Shona
+- local context review
+- usability testing with actual community users
+
+19. Success Criteria
+
+The chatbot is successful if:
+
+- users understand the messages easily
+- users can follow the instructions
+- users improve hygiene and sanitation practices
+
+Suggested measurable KPIs:
+
+- percentage of users who complete guided flows
+- rate of successful intent recognition
+- frequency of repeat use
+- reduction in fallback rate over time
+- user comprehension score from field testing
+- reported behavior change in sanitation and water handling
+
+20. Acceptance Criteria
+
+The chatbot will be accepted when:
+
+1. It answers all core sanitation, hygiene, and water safety questions in Shona.
+2. It can also provide English responses where needed.
+3. It supports multiple variations for each main question.
+4. It provides short, clear answers.
+5. It gives step-by-step instructions for tasks like treating water.
+6. It can ask follow-up questions.
+7. It provides warnings for unsafe practices.
+8. It works on mobile devices and preferably WhatsApp.
+9. Its content is reviewed against the specified validation sources.
+10. It is understandable by users with low literacy.
+
+21. Recommended MVP
+
+For version 1, the chatbot should include:
+
+- 10 core topic groups
+- at least 3 to 5 variations per question
+- Shona-first responses
+- English backup responses
+- 1 fallback flow
+- 1 simple decision tree for dirty water, lack of soap, and river water use
+- deployment on WhatsApp or a simple mobile chat interface
+
+22. Deliverables
+
+A complete implementation package should include:
+
+- chatbot requirements document
+- intent and response dataset
+- bilingual content library
+- conversation flow diagrams
+- deployment-ready chatbot logic
+- test cases
+- user acceptance checklist
+
+23. Suggested Next Artifacts
+
+The next useful documents to produce from this spec are:
+
+1. an SRS document
+2. an intent dataset in JSON/CSV
+3. a conversation flowchart
+4. a WhatsApp chatbot architecture
+5. a testing checklist
+
+I can turn this into a formal SRS, JSON training data, or a developer-ready requirements document.
+</user_query>
+<assistant_response n="1">
+
+
+I've reviewed the full specification and the workspace (currently just a stub `README.md`). I'll now create a complete set of structured Epic artifacts — specs covering architecture, content, conversation design, and NLP, plus actionable implementation tickets — so the team has a clear, developer-ready foundation to build from.
+
+---
+
+
+Created spec: 32dbb49f-0ec5-498a-a400-dc33a3db3677
+Created spec: 2fedc18c-150e-4cee-b159-9980cc2aa829
+Created spec: 5f3d9dc5-3b25-4f68-bb9c-936f3a4fe1b1
+Created spec: 3b7f3778-4277-421a-b1bb-d16ecdb9369a
+
+
+
+---
+
+Now the implementation tickets, covering the key build phases:
+
+
+Created ticket: 54e4e3fb-81a0-4a99-9449-456568be9222
+Created ticket: 6610a4f4-8e8b-4404-bfd5-0c5463798324
+Created ticket: 121af295-8902-439e-92f9-3ff480d6ea73
+Created ticket: e9480647-b769-4f58-9aae-f7d0c4efdfdc
+Created ticket: 2e978e71-5499-47a7-ada4-f668fa0e9448
+
+
+
+---
+
+
+
+Next Steps:
+
+
+The Epic now has a complete set of specs and implementation tickets. Here are suggested next steps:
+
+- **Delegate implementation** — trigger an execution to start building the project structure and content store (Ticket 1 is the natural starting point)
+- **Refine content** — ask to expand the Shona translations across all intent entries in the Knowledge Base spec
+- **Add test cases** — create a dedicated spec or ticket for the test case checklist and user acceptance criteria
+- **Conversation flowchart** — request a detailed visual conversation flow diagram as a separate spec artifact
+- **WhatsApp architecture** — request a dedicated spec covering the WhatsApp Business API integration in more detail
+
+
+</assistant_response>

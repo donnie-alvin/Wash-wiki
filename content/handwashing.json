@@ -1,0 +1,206 @@
+[
+  {
+    "intent_id": "handwash_why",
+    "topic": "Handwashing",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "Why is handwashing important?",
+      "shona": "Sei kugeza maoko kuchikosha?"
+    },
+    "sample_variations": {
+      "en": [
+        "Why should I wash my hands?",
+        "Does handwashing prevent disease?",
+        "Why does washing hands matter?"
+      ],
+      "shona": [
+        "Sei ndichifanira kugeza maoko?",
+        "Kugeza maoko kunodzivirira chirwere here?",
+        "Nei kugeza maoko kuchikosha?"
+      ]
+    },
+    "answer_short": {
+      "en": "Handwashing removes germs that spread diarrhoea, cholera, and other diseases.",
+      "shona": "Kugeza maoko kunobvisa masimu anoparadzira manyoka, korora, nezvimwe zvirwere."
+    },
+    "answer_steps": null,
+    "answer_warning": {
+      "en": "Not washing hands can spread disease to you and other people.",
+      "shona": "Kusageza maoko kunogona kuparadzira chirwere kwamuri nekune vamwe."
+    },
+    "follow_up_question": null,
+    "tags": ["handwashing", "wash hands", "important", "disease prevention", "geza maoko", "maoko", "kukosha", "chirwere"]
+  },
+  {
+    "intent_id": "handwash_when",
+    "topic": "Handwashing",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "When should I wash my hands?",
+      "shona": "Ndinofanira kugeza maoko riini?"
+    },
+    "sample_variations": {
+      "en": [
+        "What times should I wash my hands?",
+        "When is handwashing needed?",
+        "When must I wash hands?"
+      ],
+      "shona": [
+        "Ndinogeza maoko panguva dzipi?",
+        "Kugeza maoko kunodiwa riini?",
+        "Maoko anofanira kugeza riini?"
+      ]
+    },
+    "answer_short": {
+      "en": "Wash your hands at important times to stop germs from spreading.",
+      "shona": "Gezai maoko panguva dzinokosha kuti masimu arege kupararira."
+    },
+    "answer_steps": {
+      "en": [
+        "Wash before eating or preparing food.",
+        "Wash after using the toilet or changing a baby's nappy.",
+        "Wash before feeding a child and after touching animals or waste."
+      ],
+      "shona": [
+        "Gezai maoko musati madya kana kugadzira chikafu.",
+        "Gezai mushure mekushandisa chimbuzi kana kuchinja nappy yemwana.",
+        "Gezai musati madyisa mwana uye mushure mekubata mhuka kana tsvina."
+      ]
+    },
+    "answer_warning": null,
+    "follow_up_question": null,
+    "tags": ["when wash hands", "before eating", "after toilet", "riini kugeza maoko", "musati madya", "mushure mechimbuzi", "maoko"]
+  },
+  {
+    "intent_id": "handwash_how",
+    "topic": "Handwashing",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "How do I wash my hands properly?",
+      "shona": "Ndinogeza sei maoko zvakanaka?"
+    },
+    "sample_variations": {
+      "en": [
+        "What is the right way to wash hands?",
+        "Show me how to wash hands.",
+        "How should I clean my hands?"
+      ],
+      "shona": [
+        "Ndeipi nzira yakarurama yekugeza maoko?",
+        "Ndiratidzei kugeza maoko.",
+        "Ndinonatsa sei maoko?"
+      ]
+    },
+    "answer_short": {
+      "en": "Wash all parts of your hands well with clean water and soap or ash.",
+      "shona": "Gezai zvikamu zvose zvemaoko nemvura yakachena nesipo kana madota."
+    },
+    "answer_steps": {
+      "en": [
+        "Wet your hands with clean water.",
+        "Rub with soap or ash for at least 20 seconds, including between fingers.",
+        "Rinse well and dry with a clean cloth or in the air."
+      ],
+      "shona": [
+        "Nyoresai maoko nemvura yakachena.",
+        "Kwizai nesipo kana madota kwemasekondi anopfuura makumi maviri, kusanganisira pakati peminwe.",
+        "Sukutai zvakanaka moomesa nejira rakachena kana nemhepo."
+      ]
+    },
+    "answer_warning": {
+      "en": "Rinsing with water alone is not enough to remove germs well.",
+      "shona": "Kungosukuta nemvura chete hazvibvisi masimu zvakanaka."
+    },
+    "follow_up_question": null,
+    "tags": ["how to wash hands", "soap", "ash", "proper handwashing", "kugeza maoko", "sipo", "madota", "zvakanaka"]
+  },
+  {
+    "intent_id": "handwash_no_soap",
+    "topic": "Handwashing",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "What should I do if I do not have soap?",
+      "shona": "Ndoita sei kana ndisina sipo?"
+    },
+    "sample_variations": {
+      "en": [
+        "How do I wash hands without soap?",
+        "I have no soap.",
+        "What can I use instead of soap?"
+      ],
+      "shona": [
+        "Ndinogeza sei maoko kana pasina sipo?",
+        "Handina sipo.",
+        "Ndingashandisei panzvimbo yesipo?"
+      ]
+    },
+    "answer_short": {
+      "en": "You can use clean ash when soap is not available.",
+      "shona": "Munogona kushandisa madota akachena kana sipo isipo."
+    },
+    "answer_steps": {
+      "en": [
+        "Wet your hands with clean water.",
+        "Rub your hands with ash for at least 20 seconds.",
+        "Rinse well with clean water and dry them."
+      ],
+      "shona": [
+        "Nyoresai maoko nemvura yakachena.",
+        "Kwizai maoko nemadota kwemasekondi anopfuura makumi maviri.",
+        "Sukutai zvakanaka nemvura yakachena moomesa."
+      ]
+    },
+    "answer_warning": {
+      "en": "Do not skip handwashing because soap is not available.",
+      "shona": "Musarega kugeza maoko nokuti sipo haisipo."
+    },
+    "follow_up_question": {
+      "en": "Do you have soap?",
+      "shona": "Mune sipo here?"
+    },
+    "tags": ["no soap", "wash without soap", "ash", "soap alternative", "hapana sipo", "pasina sipo", "madota", "geza maoko"]
+  },
+  {
+    "intent_id": "no_soap_action",
+    "topic": "Handwashing",
+    "language": "shona/en",
+    "canonical_question": {
+      "en": "I do not have soap, what should I do?",
+      "shona": "Handina sipo, ndoita sei?"
+    },
+    "sample_variations": {
+      "en": [
+        "No soap is available.",
+        "What do I do without soap?",
+        "I cannot find soap for washing hands."
+      ],
+      "shona": [
+        "Sipo haisipo.",
+        "Ndoita sei pasina sipo?",
+        "Handikwanisi kuwana sipo yekugeza maoko."
+      ]
+    },
+    "answer_short": {
+      "en": "If soap is not available, use ash and still wash your hands properly.",
+      "shona": "Kana sipo isipo, shandisai madota uye muchiri kugeza maoko zvakanaka."
+    },
+    "answer_steps": {
+      "en": [
+        "Wet your hands with clean water.",
+        "Rub ash over all parts of your hands for 20 seconds.",
+        "Rinse well and dry with a clean cloth or air."
+      ],
+      "shona": [
+        "Nyoresai maoko nemvura yakachena.",
+        "Kwizai madota pazvikamu zvose zvemaoko kwemasekondi makumi maviri.",
+        "Sukutai zvakanaka moomesa nejira rakachena kana nemhepo."
+      ]
+    },
+    "answer_warning": {
+      "en": "Ash is better than not washing your hands at all.",
+      "shona": "Madota ari nani pane kurega kugeza maoko zvachose."
+    },
+    "follow_up_question": null,
+    "tags": ["no soap action", "soap unavailable", "ash", "handwashing", "handina sipo", "sipo haisipo", "madota", "kugeza maoko"]
+  }
+]

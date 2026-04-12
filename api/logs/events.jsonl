@@ -1,0 +1,11 @@
+{"event_type": "session_started", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:27:34.222424Z"}
+{"event_type": "intent_not_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:27:34.227230Z"}
+{"event_type": "intent_not_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:28:36.798104Z"}
+{"event_type": "intent_not_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:28:41.508182Z"}
+{"event_type": "intent_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:28:59.547596Z", "intent_id": "water_safe", "language": "en"}
+{"event_type": "intent_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:29:19.156431Z", "intent_id": "water_safe", "language": "en"}
+{"event_type": "intent_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:29:30.519908Z", "intent_id": "water_safe", "language": "en"}
+{"event_type": "intent_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:29:37.170376Z", "intent_id": "water_safe", "language": "en"}
+{"event_type": "intent_matched", "session_id": "9b041c55-3ea0-4fe5-80b6-1b4466b6c246", "timestamp": "2026-04-12T08:30:06.746650Z", "intent_id": "water_safe", "language": "en"}
+{"event_type": "session_started", "session_id": "094e402c-6f74-4b2e-a14a-004a10736dd7", "timestamp": "2026-04-12T08:52:55.918334Z"}
+{"event_type": "intent_not_matched", "session_id": "094e402c-6f74-4b2e-a14a-004a10736dd7", "timestamp": "2026-04-12T08:52:55.924113Z"}
