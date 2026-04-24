@@ -13,7 +13,12 @@ from logic.analytics import get_summary, log_event
 from api.runtime import ensure_session_started, flow_manager
 
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder=os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "templates"
+    ),
+)
 
 from api.whatsapp import whatsapp_bp
 

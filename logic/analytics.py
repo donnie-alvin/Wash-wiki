@@ -8,6 +8,8 @@ from datetime import UTC, datetime
 _DEFAULT_LOG_FILE = "logs/events.jsonl"
 if os.environ.get("VERCEL") or os.environ.get("VERCEL_ENV"):
     _DEFAULT_LOG_FILE = "/tmp/wash-wiki/events.jsonl"
+elif os.environ.get("AWS_APP_ID") or os.environ.get("AWS_EXECUTION_ENV"):
+    _DEFAULT_LOG_FILE = "/tmp/wash-wiki/events.jsonl"
 
 LOG_FILE = os.environ.get("ANALYTICS_LOG", _DEFAULT_LOG_FILE)
 _LOG_LOCK = threading.Lock()

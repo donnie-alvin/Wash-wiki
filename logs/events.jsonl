@@ -5,3 +5,5 @@
 {"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-12T13:48:18.218690Z", "language": "en"}
 {"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-12T13:59:08.691409Z"}
 {"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-12T13:59:08.691680Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-20T08:47:54.031151Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-20T08:47:54.031405Z", "language": "en"}

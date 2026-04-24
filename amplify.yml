@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - appRoot: .
+    env:
+      variables:
+        PYTHON_VERSION: "3.11"
+    backend:
+      phases:
+        build:
+          commands:
+            - pip install -r requirements.txt
+    frontend:
+      phases:
+        build:
+          commands: []
+      artifacts:
+        baseDirectory: .
+        files:
+          - "**/*"
+      cache:
+        paths: []
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:8080 --workers 2 --timeout 30

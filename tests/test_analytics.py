@@ -1,3 +1,4 @@
+import importlib
 import json
 import os
 import tempfile
@@ -87,11 +88,50 @@ class AnalyticsTests(unittest.TestCase):
         self.assertEqual(summary["intent_match_rate"], 0.25)
         self.assertEqual(summary["fallback_rate"], 0.75)
 
+    def test_log_file_defaults_to_local_path_without_platform_env(self):
+        self.assertEqual(self._get_log_file_for_env(), "logs/events.jsonl")
+
+    def test_log_file_defaults_to_tmp_path_for_vercel(self):
+        self.assertEqual(
+            self._get_log_file_for_env(VERCEL="1"),
+            "/tmp/wash-wiki/events.jsonl",
+        )
+
+    def test_log_file_defaults_to_tmp_path_for_amplify(self):
+        self.assertEqual(
+            self._get_log_file_for_env(AWS_APP_ID="app-123"),
+            "/tmp/wash-wiki/events.jsonl",
+        )
+
     def _write_events(self, events):
         os.makedirs(os.path.dirname(self.log_file), exist_ok=True)
         with open(self.log_file, "w", encoding="utf-8") as handle:
             for event in events:
                 handle.write(json.dumps(event) + "\n")
+
+    def _get_log_file_for_env(self, **env_vars):
+        tracked_env_vars = [
+            "ANALYTICS_LOG",
+            "AWS_APP_ID",
+            "AWS_EXECUTION_ENV",
+            "VERCEL",
+            "VERCEL_ENV",
+        ]
+        original_env = {name: os.environ.get(name) for name in tracked_env_vars}
+
+        try:
+            for name in tracked_env_vars:
+                os.environ.pop(name, None)
+            os.environ.update(env_vars)
+            return importlib.reload(analytics).LOG_FILE
+        finally:
+            for name in tracked_env_vars:
+                value = original_env[name]
+                if value is None:
+                    os.environ.pop(name, None)
+                else:
+                    os.environ[name] = value
+            importlib.reload(analytics)
 
 
 if __name__ == "__main__":
