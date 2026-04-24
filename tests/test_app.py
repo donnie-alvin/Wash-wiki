@@ -16,6 +16,7 @@ class AppTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Wash Wiki Chat", response.data)
+        self.assertIn(b"quick-reply-btn", response.data)
 
     @patch.object(api_app, "ensure_session_started")
     @patch.object(api_app, "log_event")
@@ -56,6 +57,13 @@ class AppTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue(os.path.isabs(api_app.app.template_folder))
         self.assertTrue(api_app.app.template_folder.endswith("api/templates"))
+
+    def test_favicon_route_serves_static_icon(self):
+        response = self.client.get("/favicon.ico")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.mimetype, "image/svg+xml")
+        self.assertIn(b"<svg", response.data)
 
 
 if __name__ == "__main__":

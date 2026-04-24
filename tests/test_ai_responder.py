@@ -100,12 +100,15 @@ class TestFlowManagerAI(unittest.TestCase):
             "steps": [],
             "warning": None,
             "follow_up": None,
+            "topics": ["Water Safety"],
         }
 
         response = self.manager.process_message("session-ai-2", "something unrelated")
 
         self.assertTrue(response["is_fallback"])
         self.assertFalse(response.get("is_ai", False))
+        self.assertEqual(response["topic_menu"], ["Water Safety"])
+        mock_get_fallback.assert_called_once_with("shona")
 
 
 class TestMessageApiAI(unittest.TestCase):

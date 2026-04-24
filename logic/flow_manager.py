@@ -5,6 +5,7 @@ from __future__ import annotations
 from logic.ai_responder import get_ai_response
 from logic.decision_trees import get_follow_up_question, resolve_branch
 from logic.fallback_handler import get_fallback
+from logic.greeting_handler import is_greeting
 from logic.intent_matcher import get_all_intents, match_intent, reload_intents
 from logic.language_manager import LanguageManager
 from logic.response_builder import build_response
@@ -81,6 +82,16 @@ LANGUAGE_SWITCH_ACK = {
     "en": "Switched to English.",
     "shona": "Tichataura muShona.",
 }
+GREETING_MESSAGES = {
+    "en": "Mhoro! Welcome to Wash Wiki. Ask me about water safety, handwashing, sanitation, or disease prevention.",
+    "shona": "Mhoro! Mukaribisha kuWash Wiki. Ndibvunzei nezvemvura, kugeza maoko, zvimbuzi, kana kudzivirira zvirwere.",
+}
+GREETING_TOPIC_MENU = [
+    "Water Safety",
+    "Handwashing",
+    "Sanitation",
+    "Disease Prevention",
+]
 
 
 class FlowManager:
@@ -129,6 +140,14 @@ class FlowManager:
 
     def process_message(self, session_id: str, user_input: str) -> dict:
         session = self._get_session(session_id)
+
+        if is_greeting(user_input):
+            session["last_intent_id"] = None
+            return self._build_output(
+                {"short": GREETING_MESSAGES.get(session["language"], GREETING_MESSAGES["en"])},
+                session,
+                topic_menu=GREETING_TOPIC_MENU,
+            )
 
         language = self._lang_manager.detect_language_switch(user_input)
         if language:

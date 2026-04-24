@@ -40,7 +40,24 @@
       "shona": "Ngwarirai zvikuru nyaya yemvura yakachengeteka nekugeza maoko mumwaka wemvura."
     },
     "follow_up_question": null,
-    "tags": ["rainy season", "disease increase", "water contamination", "mwaka wemvura", "zvirwere", "kusvibiswa kwemvura", "korora"]
+    "tags": [
+      "rainy season",
+      "rain",
+      "rainy",
+      "season",
+      "flood",
+      "wet",
+      "disease increase",
+      "water contamination",
+      "mwaka wemvura",
+      "zvirwere",
+      "kusvibiswa kwemvura",
+      "korora",
+      "kunaya",
+      "mafashamo",
+      "water",
+      "dirty"
+    ]
   },
   {
     "intent_id": "cholera_outbreak",
@@ -86,7 +103,23 @@
       "en": "Is anyone very sick right now?",
       "shona": "Pane munhu ari kurwara zvakanyanya here pari zvino?"
     },
-    "tags": ["cholera outbreak", "cholera", "severe diarrhoea", "clinic", "korora", "kupararira kwekorora", "manyoka", "chipatara"]
+    "tags": [
+      "cholera outbreak",
+      "cholera",
+      "outbreak",
+      "very sick",
+      "vomiting",
+      "diarrhoea",
+      "severe diarrhoea",
+      "clinic",
+      "korora",
+      "kupararira kwekorora",
+      "manyoka",
+      "chipatara",
+      "kurutsa",
+      "kurwara",
+      "safe water"
+    ]
   },
   {
     "intent_id": "disease_protect",
@@ -129,7 +162,26 @@
       "shona": "Kurega kuita izvi kunoisa mhuri yenyu panjodzi."
     },
     "follow_up_question": null,
-    "tags": ["protect from disease", "avoid getting sick", "prevention", "zvidzivirire", "zvirwere", "utano", "mvura yakachengeteka", "geza maoko"]
+    "tags": [
+      "protect from disease",
+      "protect",
+      "prevent",
+      "avoid getting sick",
+      "stomach sickness",
+      "healthy",
+      "safe",
+      "prevention",
+      "zvidzivirire",
+      "zvirwere",
+      "utano",
+      "mvura yakachengeteka",
+      "geza maoko",
+      "dzivirira",
+      "kurwara",
+      "water",
+      "toilet",
+      "clean"
+    ]
   },
   {
     "intent_id": "diarrhoea_what",
@@ -172,7 +224,22 @@
       "shona": "Manyoka muvana anogona kuva ane ngozi nekukurumidza — tsvagai rubatsiro nekukurumidza."
     },
     "follow_up_question": null,
-    "tags": ["diarrhoea", "loose stools", "ORS", "manyoka", "kurutsa", "mvura", "chipatara", "vana"]
+    "tags": [
+      "diarrhoea",
+      "loose stools",
+      "typhoid sickness",
+      "stomach",
+      "ORS",
+      "manyoka",
+      "kurutsa",
+      "mvura",
+      "chipatara",
+      "vana",
+      "dumbu",
+      "manyoka chii",
+      "vomiting",
+      "water"
+    ]
   },
   {
     "intent_id": "typhoid_what",
@@ -215,7 +282,25 @@
       "shona": "Typhoid inoda kurapa kwechipatara — musaedza kuirapa kumba chete."
     },
     "follow_up_question": null,
-    "tags": ["typhoid", "fever", "bacterial infection", "febha", "mvura ine tsvina", "chipatara", "chirwere", "kuparadzira"]
+    "tags": [
+      "typhoid",
+      "fever",
+      "bacterial infection",
+      "dirty water",
+      "food contamination",
+      "febha",
+      "mvura ine tsvina",
+      "chipatara",
+      "chirwere",
+      "kuparadzira",
+      "dumbu",
+      "utachiona",
+      "sick",
+      "stomach",
+      "water",
+      "dirty",
+      "safe water"
+    ]
   },
   {
     "intent_id": "contamination_prevent",
@@ -258,7 +343,28 @@
       "shona": "Kubatidza maoko kana kapu tsvina mumvura yechengeterwa kunoisvibisa zvakare kunyange yakabikwa."
     },
     "follow_up_question": null,
-    "tags": ["contamination prevention", "stored water", "clean container", "kusvibiswa", "mvura yechengeterwa", "mudziyo wakachena", "tsvina", "kuchengeta"]
+    "tags": [
+      "contamination prevention",
+      "prevent contamination",
+      "stored water",
+      "clean container",
+      "water storage",
+      "safe water",
+      "kusvibiswa",
+      "mvura yechengeterwa",
+      "mudziyo wakachena",
+      "tsvina",
+      "kuchengeta",
+      "mvura",
+      "cover",
+      "water",
+      "safe",
+      "clean",
+      "dirty",
+      "store water",
+      "prevent",
+      "contamination"
+    ]
   },
   {
     "intent_id": "disease_spread_how",
@@ -301,6 +407,26 @@
       "shona": "Kuzvibatsira panze ndiyo nzira imwe yekukurumidza kupararira kwezvirwere munharaunda yose."
     },
     "follow_up_question": null,
-    "tags": ["disease spread", "community", "flies", "open defecation", "zvirwere", "kupararira", "makonye", "kuzvibatsira panze", "nharaunda"]
+    "tags": [
+      "disease spread",
+      "community",
+      "flies",
+      "germs",
+      "open defecation",
+      "contaminated water",
+      "zvirwere",
+      "kupararira",
+      "makonye",
+      "kuzvibatsira panze",
+      "nharaunda",
+      "mvura ine tsvina",
+      "masimu",
+      "disease",
+      "spread",
+      "sick",
+      "water",
+      "toilet",
+      "dirty"
+    ]
   }
 ]

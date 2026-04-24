@@ -1,3 +1,6 @@
+# RETIRED: This file is no longer the active deployment config.
+# Deployment has been migrated to AWS Elastic Beanstalk.
+# See Procfile and .ebextensions/ for the active configuration.
 version: 1
 applications:
   - appRoot: .

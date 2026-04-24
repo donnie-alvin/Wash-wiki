@@ -138,6 +138,17 @@ class TestFlowManager(unittest.TestCase):
         self.assertEqual(self.manager._sessions["session-8"]["language"], "en")
         self.assertEqual(response["language"], "en")
 
+    @patch("logic.flow_manager.match_intent")
+    def test_greeting_short_circuits_intent_matching(self, mock_match_intent):
+        response = self.manager.process_message("session-greeting", "Hello!!!")
+
+        self.assertIn("Welcome to Wash Wiki", response["short"])
+        self.assertEqual(
+            response["topic_menu"],
+            ["Water Safety", "Handwashing", "Sanitation", "Disease Prevention"],
+        )
+        mock_match_intent.assert_not_called()
+
     def test_topic_menu_water_safety(self):
         response = self.manager.process_message("session-9", "Water Safety")
 
@@ -155,13 +166,14 @@ class TestFlowManager(unittest.TestCase):
             "steps": [],
             "warning": None,
             "follow_up": None,
+            "topics": ["Water Safety", "Handwashing"],
         }
 
         response = self.manager.process_message("session-10", "something unrelated")
 
         self.assertTrue(response["is_fallback"])
-        self.assertIsInstance(response["topic_menu"], list)
-        self.assertTrue(response["topic_menu"])
+        self.assertEqual(response["topic_menu"], ["Water Safety", "Handwashing"])
+        mock_get_fallback.assert_called_once_with("shona")
 
 
 if __name__ == "__main__":

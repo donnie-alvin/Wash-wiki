@@ -7,3 +7,13 @@
 {"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-12T13:59:08.691680Z", "language": "en"}
 {"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-20T08:47:54.031151Z"}
 {"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-20T08:47:54.031405Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:31:18.915629Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:31:18.916547Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:31:47.100796Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:31:47.101547Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:19.486635Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:19.486972Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:32.932640Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:32.933462Z", "language": "en"}
+{"event_type": "intent_not_matched", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:35.659978Z"}
+{"event_type": "ai_response", "session_id": "session-ai-api-1", "timestamp": "2026-04-24T18:33:35.660208Z", "language": "en"}

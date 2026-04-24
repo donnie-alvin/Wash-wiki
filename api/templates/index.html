@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wash Wiki Chat</title>
+  <link rel="icon" href="/favicon.ico" type="image/svg+xml">
   <style>
     * {
       box-sizing: border-box;
@@ -62,6 +63,34 @@
       white-space: nowrap;
       padding: 8px 12px;
       cursor: pointer;
+    }
+
+    .quick-replies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .quick-reply-group {
+      max-width: 80%;
+      align-self: flex-start;
+      margin-top: -2px;
+      margin-bottom: 2px;
+    }
+
+    .quick-reply-btn {
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .quick-reply-btn:hover {
+      background: #c8e6c9;
     }
 
     .chat-area {
@@ -300,6 +329,27 @@
         });
     }
 
+    function appendQuickReplies(items) {
+      const chatArea = document.getElementById("chat-area");
+      const quickReplyGroup = document.createElement("div");
+      quickReplyGroup.className = "quick-reply-group";
+      const quickReplies = document.createElement("div");
+      quickReplies.className = "quick-replies";
+
+      items.forEach((item, index) => {
+        const button = document.createElement("button");
+        button.className = "quick-reply-btn";
+        button.type = "button";
+        button.textContent = item;
+        button.dataset.elementId = `qr-${index}`;
+        button.addEventListener("click", () => sendMessage(item));
+        quickReplies.appendChild(button);
+      });
+
+      quickReplyGroup.appendChild(quickReplies);
+      chatArea.appendChild(quickReplyGroup);
+    }
+
     function renderResponse(data) {
       const chatArea = document.getElementById("chat-area");
 
@@ -328,15 +378,8 @@
         appendMessage(data.follow_up, "bot");
       }
 
-      if (data.is_fallback && data.topic_menu) {
-        data.topic_menu.forEach((item) => {
-          const button = document.createElement("button");
-          button.className = "topic-btn";
-          button.type = "button";
-          button.textContent = item;
-          button.addEventListener("click", () => sendMessage(item));
-          chatArea.appendChild(button);
-        });
+      if (data.is_fallback && Array.isArray(data.topic_menu) && data.topic_menu.length > 0) {
+        appendQuickReplies(data.topic_menu);
       }
 
       currentLanguage = data.language;

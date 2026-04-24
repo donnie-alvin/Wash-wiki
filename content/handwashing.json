@@ -29,7 +29,25 @@
       "shona": "Kusageza maoko kunogona kuparadzira chirwere kwamuri nekune vamwe."
     },
     "follow_up_question": null,
-    "tags": ["handwashing", "wash hands", "important", "disease prevention", "geza maoko", "maoko", "kukosha", "chirwere"]
+    "tags": [
+      "handwashing",
+      "wash hands",
+      "wash",
+      "clean hands",
+      "important",
+      "disease prevention",
+      "germs",
+      "disease",
+      "keep healthy",
+      "geza maoko",
+      "maoko",
+      "kukosha",
+      "chirwere",
+      "masimu",
+      "kurwara",
+      "prevent",
+      "healthy"
+    ]
   },
   {
     "intent_id": "handwash_when",
@@ -69,7 +87,22 @@
     },
     "answer_warning": null,
     "follow_up_question": null,
-    "tags": ["when wash hands", "before eating", "after toilet", "riini kugeza maoko", "musati madya", "mushure mechimbuzi", "maoko"]
+    "tags": [
+      "when wash hands",
+      "when",
+      "before eating",
+      "after toilet",
+      "times",
+      "riini kugeza maoko",
+      "musati madya",
+      "mushure mechimbuzi",
+      "maoko",
+      "nguva",
+      "rinhi",
+      "eat",
+      "toilet",
+      "wash"
+    ]
   },
   {
     "intent_id": "handwash_how",
@@ -112,7 +145,25 @@
       "shona": "Kungosukuta nemvura chete hazvibvisi masimu zvakanaka."
     },
     "follow_up_question": null,
-    "tags": ["how to wash hands", "soap", "ash", "proper handwashing", "kugeza maoko", "sipo", "madota", "zvakanaka"]
+    "tags": [
+      "how to wash hands",
+      "how",
+      "steps",
+      "properly",
+      "technique",
+      "soap",
+      "ash",
+      "proper handwashing",
+      "clean hands",
+      "kugeza maoko",
+      "sipo",
+      "madota",
+      "zvakanaka",
+      "matanho",
+      "nzira",
+      "wash",
+      "rub"
+    ]
   },
   {
     "intent_id": "handwash_no_soap",
@@ -158,7 +209,22 @@
       "en": "Do you have soap?",
       "shona": "Mune sipo here?"
     },
-    "tags": ["no soap", "wash without soap", "ash", "soap alternative", "hapana sipo", "pasina sipo", "madota", "geza maoko"]
+    "tags": [
+      "no soap",
+      "soap",
+      "wash without soap",
+      "alternative",
+      "soap alternative",
+      "ash",
+      "hapana sipo",
+      "pasina sipo",
+      "madota",
+      "geza maoko",
+      "sipo",
+      "imwe nzira",
+      "wash",
+      "clean hands"
+    ]
   },
   {
     "intent_id": "no_soap_action",
@@ -201,6 +267,22 @@
       "shona": "Madota ari nani pane kurega kugeza maoko zvachose."
     },
     "follow_up_question": null,
-    "tags": ["no soap action", "soap unavailable", "ash", "handwashing", "handina sipo", "sipo haisipo", "madota", "kugeza maoko"]
+    "tags": [
+      "no soap action",
+      "soap",
+      "no soap",
+      "soap unavailable",
+      "alternative",
+      "ash",
+      "handwashing",
+      "handina sipo",
+      "sipo haisipo",
+      "madota",
+      "kugeza maoko",
+      "sipo",
+      "imwe nzira",
+      "wash",
+      "clean hands"
+    ]
   }
 ]

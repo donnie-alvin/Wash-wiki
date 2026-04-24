@@ -1,7 +1,7 @@
 import os
 import sys
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_from_directory
 
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +17,9 @@ app = Flask(
     __name__,
     template_folder=os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "templates"
+    ),
+    static_folder=os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "static"
     ),
 )
 
@@ -79,6 +82,11 @@ def message():
 @app.get("/")
 def index():
     return render_template("index.html")
+
+
+@app.get("/favicon.ico")
+def favicon():
+    return send_from_directory(app.static_folder, "favicon.svg", mimetype="image/svg+xml")
 
 
 @app.get("/health")

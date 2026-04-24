@@ -43,7 +43,27 @@
       "en": "Is the water clear or dirty?",
       "shona": "Mvura yacho yakachena here kana yakasviba?"
     },
-    "tags": ["river", "river water", "drink", "safe", "rwizi", "mvura yerwizi", "kunwa", "yakachengeteka"]
+    "tags": [
+      "river",
+      "river water",
+      "source water",
+      "drink",
+      "safe",
+      "treat",
+      "clean",
+      "rwizi",
+      "mvura",
+      "mvura yerwizi",
+      "kunwa",
+      "yakachengeteka",
+      "rapa",
+      "sefa",
+      "drink water",
+      "unsafe water",
+      "treat water",
+      "boil water",
+      "clean water"
+    ]
   },
   {
     "intent_id": "water_clear_safe",
@@ -84,7 +104,23 @@
       "shona": "Usafunge kuti mvura yakajeka yakachengeteka."
     },
     "follow_up_question": null,
-    "tags": ["clear water", "clean water", "safe", "drink", "mvura yakachena", "mvura yakajeka", "yakachengeteka", "kunwa"]
+    "tags": [
+      "clear water",
+      "clean water",
+      "clear source",
+      "drink",
+      "safe",
+      "clean",
+      "mvura",
+      "mvura yakachena",
+      "mvura yakajeka",
+      "yakachengeteka",
+      "kunwa",
+      "yakajeka",
+      "clear",
+      "drink water",
+      "safe water"
+    ]
   },
   {
     "intent_id": "water_treat_home",
@@ -127,7 +163,26 @@
       "shona": "Usachengete mvura yarapwa mumudziyo une tsvina."
     },
     "follow_up_question": null,
-    "tags": ["treat water", "home treatment", "boil", "chlorine", "filter", "rapa mvura", "kurapa", "bika", "chlorine", "sefa"]
+    "tags": [
+      "treat water",
+      "home treatment",
+      "home water",
+      "drink",
+      "safe",
+      "boil",
+      "treat",
+      "clean",
+      "chlorine",
+      "filter",
+      "rapa mvura",
+      "kurapa",
+      "bika",
+      "mvura",
+      "sefa",
+      "home",
+      "boil water",
+      "treated water"
+    ]
   },
   {
     "intent_id": "water_boil_why",
@@ -170,7 +225,25 @@
       "shona": "Kubika hakubatsiri kana mvura yadzoswa mumudziyo usina kuchena."
     },
     "follow_up_question": null,
-    "tags": ["boil water", "why boil", "germs", "safe drinking water", "kubika mvura", "bika", "masimu", "mvura yekunwa"]
+    "tags": [
+      "boil water",
+      "why boil",
+      "boiling water",
+      "drink",
+      "safe",
+      "boil",
+      "germs",
+      "safe drinking water",
+      "kubika mvura",
+      "bika",
+      "masimu",
+      "mvura",
+      "mvura yekunwa",
+      "treat",
+      "clean",
+      "why",
+      "sick"
+    ]
   },
   {
     "intent_id": "water_boil_how_long",
@@ -202,7 +275,22 @@
       "shona": "Usanwa mvura isina kubikwa nguva yakakwana."
     },
     "follow_up_question": null,
-    "tags": ["boil time", "minutes", "how long", "kubika", "maminitsi", "nguva", "mvura"]
+    "tags": [
+      "boil time",
+      "boiling duration",
+      "boil",
+      "how long",
+      "minutes",
+      "treat",
+      "kubika",
+      "maminitsi",
+      "nguva",
+      "mvura",
+      "bika",
+      "safe",
+      "drink",
+      "time"
+    ]
   },
   {
     "intent_id": "water_safe",
@@ -248,7 +336,24 @@
       "en": "Are you using river water, borehole water, or dam water?",
       "shona": "Muri kushandisa mvura yerwizi, yemugodhi, kana yedhamu?"
     },
-    "tags": ["safe water", "drink", "water source", "boil", "treat", "mvura yakachengeteka", "kunwa", "mvura", "bika", "kurapa"]
+    "tags": [
+      "safe water",
+      "dam water source",
+      "drink",
+      "safe",
+      "water source",
+      "boil",
+      "treat",
+      "clean",
+      "mvura yakachengeteka",
+      "kunwa",
+      "mvura",
+      "bika",
+      "kurapa",
+      "yakachena",
+      "unsafe",
+      "source"
+    ]
   },
   {
     "intent_id": "water_matezva",
@@ -291,7 +396,23 @@
       "shona": "Usanwa mvura yeMatezva Dam isina kurapwa."
     },
     "follow_up_question": null,
-    "tags": ["matezva", "dam water", "drink", "safe", "Matezva", "dhamu", "mvura yedhamu", "kunwa"]
+    "tags": [
+      "matezva",
+      "dam water",
+      "green source",
+      "drink",
+      "safe",
+      "treat",
+      "boil",
+      "dhamu",
+      "mvura",
+      "mvura yedhamu",
+      "kunwa",
+      "kurapa",
+      "bika",
+      "dam",
+      "clean"
+    ]
   },
   {
     "intent_id": "water_green",
@@ -334,7 +455,24 @@
       "shona": "Mvura yegirinhi kana yakashanduka ruvara haifaniri kuvimbwa nayo isina kurapwa."
     },
     "follow_up_question": null,
-    "tags": ["green water", "algae", "dirty water", "girinhi", "mvura yegirinhi", "tsvina", "yakasviba"]
+    "tags": [
+      "green water",
+      "water",
+      "drink",
+      "safe",
+      "dirty water",
+      "clean",
+      "algae",
+      "girinhi",
+      "mvura",
+      "mvura yegirinhi",
+      "tsvina",
+      "yakasviba",
+      "sefa",
+      "green",
+      "dirty",
+      "treat"
+    ]
   },
   {
     "intent_id": "water_smell",
@@ -377,7 +515,23 @@
       "shona": "Usanwa mvura inonhuwa kana kuravira zvisina kujairika pasina kungwarira."
     },
     "follow_up_question": null,
-    "tags": ["smell", "taste", "bad water", "contaminated water", "kunhuwa", "kuravira", "mvura ine tsvina", "yakasviba"]
+    "tags": [
+      "smell",
+      "taste",
+      "water",
+      "drink",
+      "safe",
+      "bad water",
+      "contaminated water",
+      "kunhuwa",
+      "kuravira",
+      "mvura",
+      "mvura ine tsvina",
+      "yakasviba",
+      "tsvina",
+      "dirty",
+      "clean"
+    ]
   },
   {
     "intent_id": "water_mining",
@@ -420,7 +574,24 @@
       "shona": "Mvura iri pedyo nemigodhi inogona kusava yakachengeteka kunyange ichitaridzika yakachena."
     },
     "follow_up_question": null,
-    "tags": ["mining", "mine", "water quality", "pollution", "migodhi", "kusvibisa", "kunaka kwemvura", "mvura"]
+    "tags": [
+      "mining",
+      "mine",
+      "water",
+      "safe",
+      "dirty",
+      "water quality",
+      "pollution",
+      "migodhi",
+      "kusvibisa",
+      "kunaka kwemvura",
+      "mvura",
+      "yakasviba",
+      "yakachengeteka",
+      "polluted",
+      "contaminated",
+      "drink"
+    ]
   },
   {
     "intent_id": "water_germs",
@@ -452,7 +623,24 @@
       "shona": "Masimu haawanzoonekwa nemeso."
     },
     "follow_up_question": null,
-    "tags": ["germs", "dirty water", "disease", "masimu", "mvura yakasviba", "chirwere", "tsvina"]
+    "tags": [
+      "germs",
+      "water",
+      "dirty water",
+      "disease",
+      "safe water",
+      "masimu",
+      "mvura",
+      "mvura yakasviba",
+      "chirwere",
+      "tsvina",
+      "yakachengeteka",
+      "safe",
+      "drink",
+      "dirty",
+      "sick",
+      "contamination"
+    ]
   },
   {
     "intent_id": "water_ecoli",
@@ -495,7 +683,24 @@
       "shona": "Mvura ine tsvina yemuzvimbuzi inogona kuparadzira chirwere chakakomba."
     },
     "follow_up_question": null,
-    "tags": ["e. coli", "ecoli", "faeces", "germ", "E. coli", "tsvina", "simusi", "mvura"]
+    "tags": [
+      "e. coli",
+      "ecoli",
+      "water",
+      "safe",
+      "faeces",
+      "germ",
+      "tsvina",
+      "simusi",
+      "mvura",
+      "yakachengeteka",
+      "utachiona",
+      "drink",
+      "germs",
+      "dirty",
+      "toilet",
+      "contamination"
+    ]
   },
   {
     "intent_id": "water_contamination",
@@ -538,7 +743,23 @@
       "shona": "Mvura inogona kusvibiswa nemvura yemvura, mhuka, midziyo ine tsvina, uye kuzvibatsira panze."
     },
     "follow_up_question": null,
-    "tags": ["contamination", "dirty water", "unsafe water", "contaminated", "kusvibiswa", "mvura ine tsvina", "yakasviba", "mvura"]
+    "tags": [
+      "contamination",
+      "water",
+      "drink",
+      "safe",
+      "dirty water",
+      "unsafe water",
+      "contaminated",
+      "kusvibiswa",
+      "mvura ine tsvina",
+      "yakasviba",
+      "mvura",
+      "tsvina",
+      "dirty",
+      "clean",
+      "treat"
+    ]
   },
   {
     "intent_id": "water_boil_kills_germs",
@@ -581,7 +802,24 @@
       "shona": "Kubika hakubvisi tsvina inooneka, saka sefa mvura ine makore kutanga."
     },
     "follow_up_question": null,
-    "tags": ["boiling", "kill germs", "boiled water", "kubika", "kuuraya masimu", "mvura yakabikwa", "yakachengeteka"]
+    "tags": [
+      "boiling",
+      "water",
+      "boil",
+      "safe",
+      "kill germs",
+      "boiled water",
+      "kubika",
+      "kuuraya masimu",
+      "mvura",
+      "mvura yakabikwa",
+      "yakachengeteka",
+      "bika",
+      "treat",
+      "drink",
+      "germs",
+      "clean"
+    ]
   },
   {
     "intent_id": "water_cloudy_why",
@@ -627,7 +865,24 @@
       "en": "Is it very cloudy or only slightly dirty?",
       "shona": "Iine makore mazhinji here kana kuti yakasviba zvishoma?"
     },
-    "tags": ["cloudy water", "dirty water", "brown water", "makore", "mvura yakasviba", "brown", "sefa", "bika"]
+    "tags": [
+      "cloudy water",
+      "water",
+      "drink",
+      "safe",
+      "dirty water",
+      "clean",
+      "brown water",
+      "makore",
+      "mvura",
+      "mvura yakasviba",
+      "brown",
+      "sefa",
+      "bika",
+      "cloudy",
+      "dirty",
+      "treat"
+    ]
   },
   {
     "intent_id": "water_cloudy_drink",
@@ -670,7 +925,23 @@
       "shona": "Usanwa mvura ine makore yakadaro."
     },
     "follow_up_question": null,
-    "tags": ["cloudy water", "drink dirty water", "safe", "mvura ine makore", "kunwa", "yakachengeteka", "yakasviba"]
+    "tags": [
+      "cloudy water",
+      "water",
+      "drink",
+      "safe",
+      "dirty water",
+      "clean",
+      "drink dirty water",
+      "mvura",
+      "mvura ine makore",
+      "kunwa",
+      "yakachengeteka",
+      "yakasviba",
+      "cloudy",
+      "dirty",
+      "brown"
+    ]
   },
   {
     "intent_id": "water_cloudy_clean",
@@ -713,7 +984,24 @@
       "shona": "Kusefa chete hakukwanisi kuita mvura yakasviba yakachengeteka."
     },
     "follow_up_question": null,
-    "tags": ["clean dirty water", "filter", "cloudy", "dirty water", "chenesa mvura", "sefa", "mvura ine makore", "yakasviba"]
+    "tags": [
+      "clean dirty water",
+      "water",
+      "clean",
+      "safe",
+      "filter",
+      "boil",
+      "treat",
+      "cloudy",
+      "dirty water",
+      "chenesa mvura",
+      "sefa",
+      "mvura",
+      "mvura ine makore",
+      "yakasviba",
+      "drink",
+      "dirty"
+    ]
   },
   {
     "intent_id": "dirty_water_action",
@@ -759,7 +1047,24 @@
       "en": "Is it very cloudy or just slightly dirty?",
       "shona": "Iine makore mazhinji here kana kuti yakasviba zvishoma?"
     },
-    "tags": ["dirty water", "what should I do", "cloudy", "mvura yakasviba", "ndoita sei", "makore", "kurapa", "sefa"]
+    "tags": [
+      "dirty water",
+      "water",
+      "drink",
+      "safe",
+      "clean",
+      "what should I do",
+      "cloudy",
+      "boil",
+      "treat",
+      "mvura",
+      "mvura yakasviba",
+      "ndoita sei",
+      "makore",
+      "kurapa",
+      "sefa",
+      "dirty"
+    ]
   },
   {
     "intent_id": "river_water_action",
@@ -805,7 +1110,25 @@
       "en": "Is the river water clear or dirty?",
       "shona": "Mvura yerwizi yacho yakachena here kana yakasviba?"
     },
-    "tags": ["only river water", "make safe", "river", "filter", "mvura yerwizi chete", "yakachengeteka", "rwizi", "sefa"]
+    "tags": [
+      "only river water",
+      "river water",
+      "water",
+      "drink",
+      "safe",
+      "boil",
+      "treat",
+      "make safe",
+      "river",
+      "filter",
+      "mvura",
+      "mvura yerwizi chete",
+      "yakachengeteka",
+      "rwizi",
+      "sefa",
+      "bika",
+      "clean"
+    ]
   },
   {
     "intent_id": "no_clean_water",
@@ -848,6 +1171,25 @@
       "shona": "Musambonwa mvura isina kurapwa kunyange muchinyanya kuva nenyota."
     },
     "follow_up_question": null,
-    "tags": ["no clean water", "safe water unavailable", "treat water", "handina mvura yakachena", "mvura yakachengeteka", "rapa mvura", "bika", "chlorine"]
+    "tags": [
+      "no clean water",
+      "water",
+      "drink",
+      "safe",
+      "boil",
+      "treat",
+      "clean",
+      "safe water unavailable",
+      "treat water",
+      "handina mvura yakachena",
+      "mvura",
+      "mvura yakachengeteka",
+      "rapa mvura",
+      "bika",
+      "chlorine",
+      "no water",
+      "clean water",
+      "dirty"
+    ]
   }
 ]

@@ -26,7 +26,23 @@
     "answer_steps": null,
     "answer_warning": null,
     "follow_up_question": null,
-    "tags": ["sanitation", "meaning", "clean environment", "sanitation", "zvinorevei", "nharaunda yakachena", "tsvina"]
+    "tags": [
+      "sanitation",
+      "meaning",
+      "what is sanitation",
+      "clean environment",
+      "toilet",
+      "chimbuzi",
+      "latrine",
+      "clean",
+      "waste",
+      "zvinorevei",
+      "nharaunda yakachena",
+      "tsvina",
+      "utsanana",
+      "hygiene",
+      "health"
+    ]
   },
   {
     "intent_id": "sanitation_why",
@@ -55,7 +71,22 @@
     "answer_steps": null,
     "answer_warning": null,
     "follow_up_question": null,
-    "tags": ["sanitation important", "disease prevention", "cholera", "sanitation inokosha", "chirwere", "korora", "manyoka"]
+    "tags": [
+      "sanitation important",
+      "important",
+      "why",
+      "benefit",
+      "health",
+      "disease prevention",
+      "sanitation inokosha",
+      "chirwere",
+      "manyoka",
+      "utano",
+      "kukosha",
+      "clean",
+      "toilet",
+      "hygiene"
+    ]
   },
   {
     "intent_id": "sanitation_diseases",
@@ -84,7 +115,23 @@
     "answer_steps": null,
     "answer_warning": null,
     "follow_up_question": null,
-    "tags": ["poor sanitation diseases", "cholera", "typhoid", "diarrhoea", "sanitation yakaipa", "korora", "typhoid", "manyoka"]
+    "tags": [
+      "poor sanitation diseases",
+      "sanitation disease",
+      "bad sanitation",
+      "typhoid",
+      "diarrhoea",
+      "sanitation yakaipa",
+      "manyoka",
+      "chirwere",
+      "kurwara",
+      "disease",
+      "illness",
+      "health",
+      "dirty",
+      "toilet",
+      "waste"
+    ]
   },
   {
     "intent_id": "sanitation_health_impact",
@@ -127,7 +174,24 @@
       "shona": "Vana ndivo vanonyanya kuva panjodzi kana sanitation isina kunaka."
     },
     "follow_up_question": null,
-    "tags": ["health impact", "poor sanitation", "germs", "utano", "sanitation isina kunaka", "masimu", "chirwere"]
+    "tags": [
+      "health impact",
+      "poor sanitation",
+      "bad sanitation",
+      "germs",
+      "health",
+      "illness",
+      "utano",
+      "sanitation isina kunaka",
+      "masimu",
+      "chirwere",
+      "kurwara",
+      "dirty",
+      "toilet",
+      "waste",
+      "disease",
+      "sanitation"
+    ]
   },
   {
     "intent_id": "toilet_why",
@@ -159,7 +223,20 @@
       "shona": "Kuzvibatsira panze kunoparadzira chirwere kuburikidza nemakonye, mvura yemvura, uye kubata."
     },
     "follow_up_question": null,
-    "tags": ["use toilet", "latrine", "open defecation", "shandisa chimbuzi", "chimbuzi", "panze", "chirwere"]
+    "tags": [
+      "use toilet",
+      "toilet",
+      "latrine",
+      "outside",
+      "defecation",
+      "open defecation",
+      "shandisa chimbuzi",
+      "chimbuzi",
+      "panze",
+      "chirwere",
+      "kuzvibatsira panze",
+      "waste"
+    ]
   },
   {
     "intent_id": "open_defecation",
@@ -202,7 +279,22 @@
       "shona": "Kuzvibatsira panze kune ngozi kunharaunda yose, kunyanya kuvana."
     },
     "follow_up_question": null,
-    "tags": ["open defecation", "going outside", "danger", "kuzvibatsira panze", "ngozi", "chimbuzi", "vana"]
+    "tags": [
+      "open defecation",
+      "going outside",
+      "outside toilet",
+      "danger",
+      "latrine",
+      "kuzvibatsira panze",
+      "ngozi",
+      "chimbuzi",
+      "vana",
+      "panze",
+      "toilet",
+      "outside",
+      "defecation",
+      "dirty"
+    ]
   },
   {
     "intent_id": "toilet_clean",
@@ -245,6 +337,20 @@
       "shona": "Musasiye tsvina pedyo nemvura kana mudzimba."
     },
     "follow_up_question": null,
-    "tags": ["clean toilet", "latrine hygiene", "toilet hygiene", "chenesa chimbuzi", "latrine", "utsanana", "tsvina"]
+    "tags": [
+      "clean toilet",
+      "toilet",
+      "hygiene",
+      "latrine",
+      "dirty",
+      "latrine hygiene",
+      "toilet hygiene",
+      "chenesa chimbuzi",
+      "utsanana",
+      "tsvina",
+      "yakasviba",
+      "chimbuzi",
+      "wash"
+    ]
   }
 ]
